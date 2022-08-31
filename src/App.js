@@ -15,7 +15,7 @@ function App() {
         <img className="w-3/5 h-20 ml-60" src={logo} alt="" />
       </div>
       <Nav></Nav>
-      <Marquee direction="right">
+      <Marquee direction="left">
         <MarqueeText></MarqueeText>
       </Marquee>
       <Routes>
