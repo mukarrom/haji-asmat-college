@@ -1,10 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div class="navbar bg-crimson text-white sticky top-20 z-50">
       <div class="flex justify-evenly">
-        <a class="btn btn-ghost normal-case text-xl">Home</a>
+        <NavLink to="/" class="btn btn-ghost normal-case text-xl">
+          Home
+        </NavLink>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal p-0">
@@ -89,7 +92,7 @@ const Nav = () => {
             </ul>
           </li>
           <li tabindex="0">
-            <a>About</a>
+            <NavLink to="about">About</NavLink>
           </li>
           <li tabindex="0">
             <a>Admin Panel</a>

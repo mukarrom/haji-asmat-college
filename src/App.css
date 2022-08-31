@@ -1,3 +1,7 @@
+.active {
+  background: #c82848;
+}
+
 .App {
   text-align: center;
 }
