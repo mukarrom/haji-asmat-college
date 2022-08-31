@@ -5,8 +5,8 @@ const Nav = () => {
   return (
     <div class="navbar bg-crimson text-white sticky top-20 z-50">
       <div class="flex justify-evenly">
-        <NavLink to="/" class="btn btn-ghost normal-case text-xl">
-          Home
+        <NavLink to="/">
+          <p class="p-2 text-xl rounded-2xl">Home</p>
         </NavLink>
       </div>
       <div class="flex-none">
