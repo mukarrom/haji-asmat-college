@@ -7,7 +7,7 @@ const AdmitForm = () => {
         <div className="h1">Student Admission Form</div>
       </div>
       {/* Admission Form */}
-      <div className="shadow-xl w-[95%] md:w-[80%] mx-auto mt-5 bg-base-100 rounded-2xl min-h-[50vh] px-5">
+      <div className="shadow-xl w-[95%] md:w-[80%] mx-auto mt-5 rounded-2xl min-h-[50vh] px-5">
         <div className="title py-3">
           <h2 className="font-semibold text-center">Registration Form</h2>
         </div>
