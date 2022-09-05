@@ -1,12 +1,27 @@
+import { signOut } from "firebase/auth";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { NavLink, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const Nav = () => {
+  const navigete = useNavigate();
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
+
+  useEffect(() => {
+    if (user) {
+      navigete("/");
+    }
+  }, []);
   return (
-    <div class="navbar bg-crimson text-white sticky top-20 z-50">
-      <div class="flex justify-evenly">
+    <div class="navbar w-full mx-auto bg-crimson text-white sticky top-20 z-50">
+      <div class="flex 1">
         <NavLink to="/">
-          <p class="p-2 text-xl rounded-2xl">Home</p>
+          <a class="p-2 text-xl rounded-2xl">Home</a>
         </NavLink>
       </div>
       <div class="flex-none">
@@ -105,9 +120,17 @@ const Nav = () => {
               </li>
             </ul>
           </li>
-          <li tabindex="0">
-            <a>Login</a>
-          </li>
+          {user ? (
+            <li tabindex="0">
+              <NavLink onClick={logout} to="regi">
+                Logout
+              </NavLink>
+            </li>
+          ) : (
+            <li tabindex="0">
+              <NavLink to="login">Login</NavLink>
+            </li>
+          )}
         </ul>
       </div>
     </div>

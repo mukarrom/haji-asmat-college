@@ -7,6 +7,8 @@ import Nav from "./components/Home/Nav";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About/About";
 import MarqueeText from "./components/Home/MarqueeText";
+import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route path="login" element={<Login></Login>}></Route>
+        <Route path="regi" element={<Registration></Registration>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
