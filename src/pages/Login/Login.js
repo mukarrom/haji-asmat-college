@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { NavLink, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
-import { useEffect } from "react";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -62,7 +61,7 @@ const Login = () => {
                   type="submit"
                   class="btn w-full  bg-crimson grid h-14 flex-grow card place-items-center hover:bg-crimson_lighter cursor-pointer text-white rounded-md"
                 >
-                  Login
+                  Login me
                 </button>
                 <div>
                   <span style={{ fontSize: "12px", cursor: "pointer" }}>
