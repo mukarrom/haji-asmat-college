@@ -8,7 +8,6 @@ import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
 import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
-import MarqueeText from "./components/Home/MarqueeText";
 import Login from "./pages/Login/Login";
 import Registration from "./pages/Registration/Registration";
 
