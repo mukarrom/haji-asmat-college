@@ -8,6 +8,9 @@ import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
 import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
+import MarqueeText from "./components/Home/MarqueeText";
+import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/admitform1" element={<AdmitForm></AdmitForm>}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route path="login" element={<Login></Login>}></Route>
+        <Route path="regi" element={<Registration></Registration>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
