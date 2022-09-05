@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 import { Route, Routes } from "react-router-dom";
 import logo from "../src/assets/logo.jpg";
 import "./App.css";
-// import MarqueeText from "./components/Home/MarqueeText";
+import MarqueeText from "./components/Home/MarqueeText";
 import Nav from "./components/Home/Nav";
 import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
