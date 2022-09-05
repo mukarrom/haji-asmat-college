@@ -10,10 +10,10 @@ const Nav = () => {
   const logout = () => {
     signOut(auth);
   };
-
+console.log(user);
   useEffect(() => {
     if (user) {
-      navigate("/");
+      // navigate("/");
     }
   }, [user, navigate]);
   const navMenu = (
@@ -22,7 +22,7 @@ const Nav = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/admitForm">Admission</NavLink>
+        <NavLink to="/admission">Admission</NavLink>
       </li>
       <li>
         <NavLink to="/event">Event & news</NavLink>
@@ -46,7 +46,7 @@ const Nav = () => {
   );
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson text-white">
+    <div className="navbar bg-crimson text-white z-50 relative sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -67,7 +67,7 @@ const Nav = () => {
           </label>
           <ul
             tabindex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
           >
             {/* Menu For Mobile */}
             {navMenu}
@@ -84,7 +84,7 @@ const Nav = () => {
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
               </a>
-              <ul className="p-2">
+              <ul className="p-2 bg-crimson">
                 <li>
                   <a>Submenu 1</a>
                 </li>
@@ -126,25 +126,11 @@ const Nav = () => {
               </li>
             </ul>
           </li>
-          {/* {user ? (
-            <li tabindex="0">
-              <NavLink onClick={logout} to="regi">
-                Logout
-              </NavLink>
-            </li>
-          ) : (
-            <li tabindex="0">
-              <NavLink to="login">Login</NavLink>
-            </li>
-          )} */}
           {!user && (
             <li>
               <NavLink to="login">Login</NavLink>
             </li>
           )}
-          {/* <li>
-            <a>Item 3</a>
-          </li> */}
         </ul>
       </div>
       {/* ---------------
@@ -193,7 +179,7 @@ const Nav = () => {
           <div className="dropdown dropdown-end">
             <label tabindex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="https://placeimg.com/80/80/people" />
+                <img src={user?.photoURL || "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=740&t=st=1662389822~exp=1662390422~hmac=9a536effe4040efa033364ea9f3fb619491d07cde39926fd0deae7a5b23e55f7"} alt=""/>
               </div>
             </label>
             <ul
