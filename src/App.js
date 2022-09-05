@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./components/Home/Nav";
 import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
+import Contact from "./pages/Contact/Contact";
 import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/admission" element={<AdmitForm></AdmitForm>}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="regi" element={<Registration></Registration>}></Route>
       </Routes>
