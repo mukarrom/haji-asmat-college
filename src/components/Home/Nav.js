@@ -27,13 +27,13 @@ const Nav = () => {
       <div class="flex-none">
         <ul class="menu menu-horizontal p-0">
           <li tabindex="0">
-            <a>Admission</a>
+            <NavLink to="/admitform1">Admission</NavLink>
             <ul class="p-2  bg-crimson text-white">
               <li>
-                <a>Admission 1</a>
+                <NavLink to="/admitform1">Admission 1</NavLink>
               </li>
               <li>
-                <a>Admission 2</a>
+                <NavLink to="/admitform2">Admission 2</NavLink>
               </li>
             </ul>
           </li>

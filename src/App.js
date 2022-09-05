@@ -1,11 +1,13 @@
-import "./App.css";
 import Marquee from "react-fast-marquee";
+import { Route, Routes } from "react-router-dom";
 import logo from "../src/assets/logo.jpg";
-import Home from "./pages/Home/Home";
-import Footer from "./pages/Footer/Footer";
+import "./App.css";
+import MarqueeText from "./components/Home/MarqueeText";
 import Nav from "./components/Home/Nav";
-import { Routes, Route } from "react-router-dom";
 import About from "./pages/About/About";
+import AdmitForm from "./pages/AdmitForm/AdmitForm";
+import Footer from "./pages/Footer/Footer";
+import Home from "./pages/Home/Home";
 import MarqueeText from "./components/Home/MarqueeText";
 import Login from "./pages/Login/Login";
 import Registration from "./pages/Registration/Registration";
@@ -22,6 +24,8 @@ function App() {
       </Marquee>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/admitform1" element={<AdmitForm></AdmitForm>}></Route>
         <Route path="about" element={<About></About>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="regi" element={<Registration></Registration>}></Route>
