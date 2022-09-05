@@ -201,13 +201,13 @@ const Nav = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
             >
               <li>
-                <a className="justify-between">
+                <NavLink to='profile' className="justify-between">
                   Profile
                   <span className="badge">New</span>
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a>Settings</a>
+                <NavLink to='setting'>Settings</NavLink>
               </li>
               <li>
                 <NavLink to="regi" onClick={logout}>
