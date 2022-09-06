@@ -13,9 +13,9 @@ import Registration from "./pages/Registration/Registration";
 function App() {
   return (
     <div className="App">
-      <div className="mx-auto bg-white">
+      {/* <div className="mx-auto bg-white">
         <img className="w-3/5 h-20 ml-60" src={logo} alt="" />
-      </div>
+      </div> */}
       <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
