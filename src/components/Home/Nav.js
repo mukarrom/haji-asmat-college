@@ -40,7 +40,10 @@ console.log(user);
         <NavLink to="/calender">Calendar</NavLink>
       </li>
       <li>
-        <NavLink to="/admin">Admin Panel</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/mujib">Mujib Corner</NavLink>
       </li>
     </>
   );
