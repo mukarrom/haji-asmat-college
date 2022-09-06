@@ -1,7 +1,7 @@
 import { signOut } from "firebase/auth";
 import React, { useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Nav = () => {
@@ -46,7 +46,7 @@ console.log(user);
   );
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson text-white z-50 relative sticky top-0">
+    <div className="navbar bgGradientCrimson text-white z-50 relative sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -98,7 +98,9 @@ console.log(user);
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Hazi Asmat College</a>
+        <Link to='/' className="btn btn-ghost normal-case text-xl">
+          <img className="absolute top-0 left-0 h-[120px] w-32 rounded-b-full shadow-md" src="http://www.nubd.info/college/uploads/4906_logo.png" alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
