@@ -21,10 +21,10 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/admission" element={<AdmitForm></AdmitForm>}></Route>
-        <Route path="about" element={<About></About>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="login" element={<Login></Login>}></Route>
-        <Route path="regi" element={<Registration></Registration>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/regi" element={<Registration></Registration>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
