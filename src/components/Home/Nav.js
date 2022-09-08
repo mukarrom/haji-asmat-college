@@ -26,7 +26,7 @@ console.log(user);
         <NavLink to="/admission">Admission</NavLink>
       </li>
       <li>
-        <NavLink to="/event">Event & news</NavLink>
+        <NavLink to="/event">Events & news</NavLink>
       </li>
       <li>
         <NavLink to="/contact">Contact</NavLink>
@@ -50,7 +50,7 @@ console.log(user);
   );
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson text-white z-50 relative sticky top-0">
+    <div className="navbar bg-crimson  text-white z-50 relative sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
