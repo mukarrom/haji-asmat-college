@@ -2,8 +2,8 @@ import React from "react";
 
 const MarqueeText = () => {
   return (
-    <div className="flex ">
-      <p className=" mr-4">
+    <div className="flex">
+      <p className="">
         ***আমার সোনার বাংলা, আমি তোমায় ভালোবাসি|***
       </p>
       <p className="">***আমার সোনার বাংলা, আমি তোমায় ভালোবাসি|***</p>

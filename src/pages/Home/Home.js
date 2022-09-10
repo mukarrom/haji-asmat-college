@@ -11,7 +11,7 @@ import Contact from "../Contact/Contact";
 const Home = () => {
   return (
     <div>
-      <div className="absolute bg-base-100 bg-opacity-60">
+      <div className="absolute right-0 top-100 bg-base-100 bg-opacity-60 w-full">
         <Marquee direction="left">
           <MarqueeText></MarqueeText>
         </Marquee>
