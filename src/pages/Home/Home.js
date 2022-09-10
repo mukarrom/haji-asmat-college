@@ -11,18 +11,19 @@ import Contact from "../Contact/Contact";
 const Home = () => {
   return (
     <div>
-      <Marquee direction="left" className="bgGradientCrimson">
-        <MarqueeText></MarqueeText>
-      </Marquee>
+      <div className="absolute right-0 top-100 bg-base-100 bg-opacity-60 w-full">
+        <Marquee direction="left">
+          <MarqueeText></MarqueeText>
+        </Marquee>
+      </div>
       <Carousel></Carousel>
       <Facility></Facility>
       <AboutCollege></AboutCollege>
       <NoticeEventNews></NoticeEventNews>
-      <Contact/>
-  
+      <Contact />
+
       {/* <WelcomeImage></WelcomeImage> */}
     </div>
-    
   );
 };
 

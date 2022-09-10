@@ -9,13 +9,16 @@ import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Registration from "./pages/Registration/Registration";
+// import logo from './assets/logo.jpg'
+import Logo from "./components/Logo/Logo";
 
 function App() {
   return (
-    <div className="App">
-      {/* <div className="mx-auto bg-white">
-        <img className="w-3/5 h-20 ml-60" src={logo} alt="" />
+    <div className="">
+      {/* <div className="bg-white lg:hidden">
+        <img className="w-3/5 h-20 mx-auto" src={logo} alt="" />
       </div> */}
+      <Logo display="hidden"/>
       <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

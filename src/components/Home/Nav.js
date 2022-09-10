@@ -50,7 +50,7 @@ console.log(user);
   );
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson  text-white z-50 relative sticky top-0">
+    <div className="navbar bg-crimson  text-white z-50 sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -70,7 +70,7 @@ console.log(user);
             </svg>
           </label>
           <ul
-            tabindex={0}
+            tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
           >
             {/* Menu For Mobile */}
@@ -102,13 +102,14 @@ console.log(user);
             </li>
           </ul>
         </div>
-        <Link to='/' className="btn btn-ghost normal-case text-xl">
-          <img className="absolute top-0 left-0 h-[120px] w-32 rounded-b-full shadow-md" src={logo} alt="" />
+        {/* ==============> Logo <============== */}
+        <Link to='/' className="hidden lg:block absolute top-0 left-[50%] lg:left-0 h-[120px]">
+          <img className="w-32 rounded-b-full shadow-md" src={logo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          {/* Menu for lg Screen */}
+          {/* ==============> Menu for lg Screen <============== */}
           {navMenu}
           <li tabindex={0}>
             <a>
