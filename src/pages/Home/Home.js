@@ -5,7 +5,8 @@ import Carousel from "../../components/Home/Carousel";
 import Facility from "../../components/Home/Facility";
 import MarqueeText from "../../components/Home/MarqueeText";
 import NoticeEventNews from "../../components/Home/NoticeEventNews";
-import WelcomeImage from "../../components/Home/WelcomeImage";
+// import WelcomeImage from "../../components/Home/WelcomeImage";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -17,8 +18,11 @@ const Home = () => {
       <Facility></Facility>
       <AboutCollege></AboutCollege>
       <NoticeEventNews></NoticeEventNews>
-      <WelcomeImage></WelcomeImage>
+      <Contact/>
+  
+      {/* <WelcomeImage></WelcomeImage> */}
     </div>
+    
   );
 };
 
