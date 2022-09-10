@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import logo from '../../assets/asmat-logo.jpeg'
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ console.log(user);
         <NavLink to="/admission">Admission</NavLink>
       </li>
       <li>
-        <NavLink to="/event">Event & news</NavLink>
+        <NavLink to="/event">Events & news</NavLink>
       </li>
       <li>
         <NavLink to="/contact">Contact</NavLink>
@@ -40,13 +41,16 @@ console.log(user);
         <NavLink to="/calender">Calendar</NavLink>
       </li>
       <li>
-        <NavLink to="/admin">Admin Panel</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/mujib">Mujib Corner</NavLink>
       </li>
     </>
   );
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bgGradientCrimson text-white z-50 relative sticky top-0">
+    <div className="navbar bg-crimson  text-white z-50 relative sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -99,7 +103,7 @@ console.log(user);
           </ul>
         </div>
         <Link to='/' className="btn btn-ghost normal-case text-xl">
-          <img className="absolute top-0 left-0 h-[120px] w-32 rounded-b-full shadow-md" src="http://www.nubd.info/college/uploads/4906_logo.png" alt="" />
+          <img className="absolute top-0 left-0 h-[120px] w-32 rounded-b-full shadow-md" src={logo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

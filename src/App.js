@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import logo from "../src/assets/logo.jpg";
 import "./App.css";
 import Nav from "./components/Home/Nav";
 import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
+import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
@@ -21,12 +21,14 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/admission" element={<AdmitForm></AdmitForm>}></Route>
-        <Route path="about" element={<About></About>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/event" element={<Blogs></Blogs>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="login" element={<Login></Login>}></Route>
-        <Route path="regi" element={<Registration></Registration>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+      <Route path="/regi" element={<Registration></Registration>}></Route>
       </Routes>
       <Footer></Footer>
+      
     </div>
   );
 }
