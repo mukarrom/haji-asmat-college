@@ -6,8 +6,8 @@ import pic4 from "../../assets/college4.jpg";
 
 const Carousel = () => {
   return (
-    <div>
-      <div class="carousel w-full h-96">
+    <div className="">
+      <div class="carousel w-full h-[70vh]">
         <div id="item1" class="carousel-item w-full">
           <img src={pic1} class="w-full" alt=""/>
         </div>
