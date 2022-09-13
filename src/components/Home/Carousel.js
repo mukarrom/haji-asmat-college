@@ -9,10 +9,10 @@ const Carousel = () => {
     <div className="">
       <div class="carousel w-full h-[70vh]">
         <div id="item1" class="carousel-item w-full">
-          <img src={pic1} class="w-full" alt=""/>
+          <img src="https://demo.web3canvas.com/themeforest/unisco/images/slider-3.jpg" class="w-full" alt=""/>
         </div>
         <div id="item2" class="carousel-item w-full">
-          <img src={pic2} class="w-full" alt=""/>
+          <img src="http://kodeforest.net/html/uoe/extra-images/slider2.jpg" class="w-full" alt=""/>
         </div>
         <div id="item3" class="carousel-item w-full">
           <img src={pic3} class="w-full" alt=""/>
