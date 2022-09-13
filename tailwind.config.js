@@ -7,7 +7,7 @@ module.exports = {
         crimson: "#710117",
         crimson_lighter: "#c82848",
         white: "#FFFFFF",
-        primary: "#6366f1",
+        primary: "#710117",
         success: "#48bb78",
         warning: "#f56565",
         info: "#ed64a6",
