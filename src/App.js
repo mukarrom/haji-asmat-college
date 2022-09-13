@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Nav from "./components/Home/Nav";
 import About from "./pages/About/About";
 import AdmitForm from "./pages/AdmitForm/AdmitForm";
 import Blogs from "./pages/Blogs/Blogs";
@@ -11,6 +10,7 @@ import Login from "./pages/Login/Login";
 import Registration from "./pages/Registration/Registration";
 // import logo from './assets/logo.jpg'
 import Logo from "./components/Logo/Logo";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <img className="w-3/5 h-20 mx-auto" src={logo} alt="" />
       </div> */}
       <Logo display="hidden"/>
-      <Nav></Nav>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
