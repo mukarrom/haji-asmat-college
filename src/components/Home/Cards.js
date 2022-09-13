@@ -3,9 +3,9 @@ import BlogCard from "../Blog/BlogCard";
 import EventCard from "../Event/EventCard";
 import NoticeCard from "../Notice/NoticeCard";
 
-const NoticeEventNews = () => {
+const Cards = () => {
   return (
-    <div className="container mx-auto px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 w-full justify-evenly">
+    <div className="container mx-auto xl:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 w-full justify-evenly">
       <NoticeCard/>
       <EventCard/>
       <BlogCard/>
@@ -14,4 +14,4 @@ const NoticeEventNews = () => {
   );
 };
 
-export default NoticeEventNews;
+export default Cards;

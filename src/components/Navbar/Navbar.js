@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson  text-white z-50 sticky top-0">
+    <div className="navbar bg-primary  text-white z-50 sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
           >
             {/* Menu For Mobile */}
             {navItems}

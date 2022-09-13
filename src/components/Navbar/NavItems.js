@@ -13,9 +13,6 @@ const NavItems = () => {
       <li>
         <NavLink to="/admission">Admission</NavLink>
       </li>
-      <li>
-        <NavLink to="/event">Events & news</NavLink>
-      </li>
       {/* menu with submenu */}
       {blogMenu}
       {/* ---------- */}
