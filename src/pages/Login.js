@@ -1,7 +1,7 @@
 import React from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { NavLink, useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
+import auth from "../firebase.init";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =

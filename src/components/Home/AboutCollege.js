@@ -4,7 +4,7 @@ import college from "../../assets/college.jpg";
 const AboutCollege = () => {
   return (
     <div>
-      <div class="hero h-96">
+      <div class="hero">
         <div class="hero-content flex-col lg:flex-row">
           <img src={college} class="w-96 max-h-96 rounded-lg shadow-2xl" />
           <div>

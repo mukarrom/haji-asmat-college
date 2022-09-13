@@ -1,16 +1,18 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./pages/About/About";
-import AdmitForm from "./pages/AdmitForm/AdmitForm";
-import Blogs from "./pages/Blogs/Blogs";
-import Contact from "./pages/Contact/Contact";
-import Footer from "./pages/Footer/Footer";
-import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
-import Registration from "./pages/Registration/Registration";
+import About from "./pages/About";
+import AdmitForm from "./pages/AdmitForm";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 // import logo from './assets/logo.jpg'
 import Logo from "./components/Logo/Logo";
 import Navbar from "./components/Navbar/Navbar";
+import NoticeCard from "./components/Notice/NoticeCard";
+import Notice from "./pages/Notice";
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/admission" element={<AdmitForm></AdmitForm>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/event" element={<Blogs></Blogs>}></Route>
+        <Route path="/blog" element={<Blogs></Blogs>}></Route>
+        <Route path="/notice" element={<Notice></Notice>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
       <Route path="/regi" element={<Registration></Registration>}></Route>

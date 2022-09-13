@@ -1,7 +1,7 @@
 import React from "react";
-import ContactAddress from "../../components/Contact/ContactAddress";
-import ContactForm from "../../components/Contact/ContactForm";
-import Map from "../../components/Contact/Map";
+import ContactAddress from "../components/Contact/ContactAddress";
+import ContactForm from "../components/Contact/ContactForm";
+import Map from "../components/Contact/Map";
 
 const Contact = () => {
   return (

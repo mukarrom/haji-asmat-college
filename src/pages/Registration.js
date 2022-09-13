@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import auth from "../firebase.init";
 import { useEffect } from "react";
 
 const Registration = () => {
