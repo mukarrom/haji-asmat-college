@@ -13,6 +13,7 @@ import Logo from "./components/Logo/Logo";
 import Navbar from "./components/Navbar/Navbar";
 import NoticeCard from "./components/Notice/NoticeCard";
 import Notice from "./pages/Notice";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -23,15 +24,16 @@ function App() {
       <Logo display="hidden"/>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/admission" element={<AdmitForm></AdmitForm>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="/blog" element={<Blogs></Blogs>}></Route>
-        <Route path="/notice" element={<Notice></Notice>}></Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-      <Route path="/regi" element={<Registration></Registration>}></Route>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/admission" element={<AdmitForm/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/events" element={<Events/>}/>
+        <Route path="/notice" element={<Notice/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Registration/>}/>
       </Routes>
       <Footer></Footer>
       

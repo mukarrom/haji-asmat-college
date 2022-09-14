@@ -1,11 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PageHeading from "../components/PageHeading";
 
 const AdmitForm = () => {
   return (
     <div>
-      <div className="w-full h-24 bgGradientprimary flex justify-center items-center text-white">
-        <div className="h1">Student Admission Form</div>
-      </div>
+      <PageHeading>
+        <div className="h1">Admission Form</div>
+        <div className="text-sm breadcrumbs">
+          <ul>
+            <li>
+              <Link to="/home" className="hover:text-yellow-600">Home</Link>
+            </li>
+            <li className="hover:text-yellow-600">Admission Form</li>
+          </ul>
+        </div>
+      </PageHeading>
       {/* Admission Form */}
       <div className="shadow-xl w-[95%] md:w-[80%] mx-auto mt-5 rounded-2xl min-h-[50vh] px-5">
         <div className="title py-3">
