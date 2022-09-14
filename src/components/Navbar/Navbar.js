@@ -6,14 +6,15 @@ import auth from "../../firebase.init";
 import NavItems from "./NavItems";
 import { notification } from "./Notification";
 import ProfileMenu from "./ProfileMenu";
-import { search } from "./Search";
+import { searchIcon } from "./SearchMenu";
+import SearchModal from "./SearchModal";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
 
   const [navItems] = NavItems();
-  const [profile] = ProfileMenu();
+  const [profileIcon] = ProfileMenu();
 
   useEffect(() => {
     if (user) {
@@ -69,11 +70,12 @@ const Navbar = () => {
           ---------------- */}
       <div className="navbar-end">
         {/* search */}
-        {search}
+        {searchIcon}
+        <SearchModal/>
         {/* notification */}
         {notification}
         {/* profile */}
-        {profile}
+        {profileIcon}
       </div>
     </div>
   );
