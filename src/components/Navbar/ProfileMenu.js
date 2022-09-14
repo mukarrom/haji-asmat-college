@@ -1,5 +1,5 @@
-import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink } from "react-router-dom";
 import auth from "../../firebase.init";
 const ProfileMenu = () => {
@@ -20,7 +20,7 @@ const ProfileMenu = () => {
             </label>
             <ul
               tabindex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
             >
               <li>
                 <NavLink to="profile" className="justify-between">

@@ -6,14 +6,15 @@ import auth from "../../firebase.init";
 import NavItems from "./NavItems";
 import { notification } from "./Notification";
 import ProfileMenu from "./ProfileMenu";
-import { search } from "./Search";
+import { searchIcon } from "./SearchMenu";
+import SearchModal from "./SearchModal";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
 
   const [navItems] = NavItems();
-  const [profile] = ProfileMenu();
+  const [profileIcon] = ProfileMenu();
 
   useEffect(() => {
     if (user) {
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   return (
     // ---------------------- New Navbar -------------------------------------
-    <div className="navbar bg-crimson  text-white z-50 sticky top-0">
+    <div className="navbar bg-primary  text-white z-50 sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex={0} className="btn btn-ghost lg:hidden">
@@ -44,7 +45,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-crimson rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
           >
             {/* Menu For Mobile */}
             {navItems}
@@ -69,11 +70,12 @@ const Navbar = () => {
           ---------------- */}
       <div className="navbar-end">
         {/* search */}
-        {search}
+        {searchIcon}
+        <SearchModal/>
         {/* notification */}
         {notification}
         {/* profile */}
-        {profile}
+        {profileIcon}
       </div>
     </div>
   );

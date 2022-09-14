@@ -1,9 +1,7 @@
-import React from "react";
-import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { NavLink, useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
-import { useEffect } from "react";
 
 const Registration = () => {
   const [email, setEmail] = useState("");
@@ -79,7 +77,7 @@ const Registration = () => {
                 <div class="form-control mt-6">
                   <button
                     type="submit"
-                    class="btn w-full  bg-crimson grid h-14 flex-grow card place-items-center hover:bg-crimson_lighter cursor-pointer text-white rounded-md"
+                    class="btn w-full  bg-primary grid h-14 flex-grow card place-items-center hover:bg-primary_lighter cursor-pointer text-white rounded-md"
                   >
                     Registration
                   </button>

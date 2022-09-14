@@ -59,7 +59,7 @@ const Login = () => {
               <div class="form-control mt-6">
                 <button
                   type="submit"
-                  class="btn w-full  bg-crimson grid h-14 flex-grow card place-items-center hover:bg-crimson_lighter cursor-pointer text-white rounded-md"
+                  class="btn w-full  bg-primary grid h-14 flex-grow card place-items-center hover:bg-primary_lighter cursor-pointer text-white rounded-md"
                 >
                   Login me
                 </button>

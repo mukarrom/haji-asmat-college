@@ -3,7 +3,7 @@ import React from "react";
 const ContactAddress = () => {
   return (
     <div class="lg:w-1/2 lg:mx-6 flex flex-col items-center justify-center">
-      <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-5xl">
+      <h1 class="text-3xl text-center font-semibold text-gray-800 capitalize dark:text-white lg:text-5xl">
         Contact us for <br /> more info
       </h1>
 
@@ -81,7 +81,7 @@ const ContactAddress = () => {
       </div>
 
       <div class="mt-12 w-80 md:mt-8 mx-auto">
-        <h3 class="text-gray-600 dark:text-gray-300 ">Follow us</h3>
+        <h3 class="text-gray-600 dark:text-gray-300 text-center">Follow us</h3>
 
         <div class="flex justify-center mt-4 -mx-1.5 ">
           {/* Twitter */}

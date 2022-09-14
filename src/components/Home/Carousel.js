@@ -1,6 +1,4 @@
 import React from "react";
-import pic1 from "../../assets/college1.jpg";
-import pic2 from "../../assets/college2.jpg";
 import pic3 from "../../assets/college3.jpg";
 import pic4 from "../../assets/college4.jpg";
 
@@ -22,16 +20,16 @@ const Carousel = () => {
         </div>
       </div>
       <div class="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" class="btn btn-xs  bg-crimson text-white">
+        <a href="#item1" class="btn btn-xs  bg-primary text-white">
           1
         </a>
-        <a href="#item2" class="btn btn-xs  bg-crimson text-white">
+        <a href="#item2" class="btn btn-xs  bg-primary text-white">
           2
         </a>
-        <a href="#item3" class="btn btn-xs  bg-crimson text-white">
+        <a href="#item3" class="btn btn-xs  bg-primary text-white">
           3
         </a>
-        <a href="#item4" class="btn btn-xs  bg-crimson text-white">
+        <a href="#item4" class="btn btn-xs  bg-primary text-white">
           4
         </a>
       </div>

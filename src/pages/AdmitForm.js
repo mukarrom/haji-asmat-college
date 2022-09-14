@@ -3,7 +3,7 @@ import React from "react";
 const AdmitForm = () => {
   return (
     <div>
-      <div className="w-full h-24 bgGradientCrimson flex justify-center items-center text-white">
+      <div className="w-full h-24 bgGradientprimary flex justify-center items-center text-white">
         <div className="h1">Student Admission Form</div>
       </div>
       {/* Admission Form */}
@@ -95,7 +95,7 @@ const AdmitForm = () => {
           <input
             type="submit"
             value="Submit"
-            className="btn btn-primary bgGradientCrimson hover:bgGradientBl w-[50%] block mx-auto text-xl"
+            className="btn btn-primary bgGradientprimary hover:bgGradientBl w-[50%] block mx-auto text-xl"
           />
         </form>
       </div>
