@@ -1,10 +1,11 @@
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink } from "react-router-dom";
 import auth from "../../firebase.init";
-import { blogMenu } from "./BlogMenu";
+import BlogMenu from "./BlogMenu";
 
 const NavItems = () => {
   const [user] = useAuthState(auth);
+  const [blogMenu] = BlogMenu();
   const navItems = (
     <>
       <li>
@@ -22,12 +23,12 @@ const NavItems = () => {
       <li>
         <NavLink to="/notice">Notice</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/syllabus">Syllabus</NavLink>
       </li>
       <li>
         <NavLink to="/calender">Calendar</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/about">About</NavLink>
       </li>

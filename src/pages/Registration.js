@@ -10,13 +10,13 @@ const Registration = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
 
-  const navigete = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (user) {
-      navigete("/");
+      navigate("/");
     }
-  }, []);
+  }, [user, navigate]);
   console.log(email);
   const register = (event) => {
     event.preventDefault();

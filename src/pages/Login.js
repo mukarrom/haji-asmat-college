@@ -65,7 +65,7 @@ const Login = () => {
                 </button>
                 <div>
                   <span style={{ fontSize: "12px", cursor: "pointer" }}>
-                    <NavLink to="/regi">Don't have an account? Sign Up</NavLink>
+                    <NavLink to="/register">Don't have an account? Sign Up</NavLink>
                   </span>
                 </div>
               </div>
