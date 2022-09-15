@@ -8,7 +8,6 @@ const Events = () => {
     <div>
       <PageHeading>
         <div className="h1">event</div>
-        <div className="h1">event</div>
         <div className="text-sm breadcrumbs">
           <ul>
             <li>
