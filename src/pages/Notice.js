@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NoticeCard from "../components/Notice/NoticeCard";
+import NoticeBoard from "../components/Notice/NoticeBoard";
+// import NoticeCard from "../components/Notice/NoticeCard";
 import PageHeading from "../components/PageHeading";
 
 const Notice = () => {
@@ -19,7 +20,12 @@ const Notice = () => {
           </ul>
         </div>
       </PageHeading>
-      <NoticeCard />
+      <div className="">
+        <div className="main">
+          <NoticeBoard />
+        </div>
+        <div className="aside"></div>
+      </div>
     </div>
   );
 };
