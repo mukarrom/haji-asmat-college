@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Card({ cardHeading, children }) {
   return (
     <div>
@@ -7,12 +5,9 @@ function Card({ cardHeading, children }) {
         <div className="bg-primary w-full text-white rounded-tr-2xl rounded-bl-2xl">
           {cardHeading}
         </div>
-        <div className="px-3 pt-5 pb-10 h-full overflow-y-auto">
-          {children}
-        </div>
+        <div className="px-3 pt-5 pb-10 h-full overflow-y-auto">{children}</div>
       </div>
     </div>
   );
 }
-
 export default Card;

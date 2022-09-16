@@ -11,7 +11,6 @@ import Registration from './pages/Registration';
 // import logo from './assets/logo.jpg'
 import Logo from './components/Logo/Logo';
 import Navbar from './components/Navbar/Navbar';
-import NoticeCard from './components/Notice/NoticeCard';
 import Notice from './pages/Notice';
 import Events from './pages/Events';
 
