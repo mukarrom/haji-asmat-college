@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "../../assets/asmat-logo.jpeg";
+import React from 'react';
+import logo from '../../assets/asmat-logo.jpeg';
 
-const Logo = ({display}) => {
-    console.log(display);
+function Logo({ display }) {
+  console.log(display);
   return (
     <div className={`bg-gradient-to-l from-primary to-secondary lg:${display} flex justify-center items-center space-x-8 `}>
       <div className="w-28 h-28">
@@ -14,6 +14,6 @@ const Logo = ({display}) => {
       </div>
     </div>
   );
-};
+}
 
 export default Logo;

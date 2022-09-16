@@ -1,7 +1,7 @@
-import React from "react";
-import welcome from "../../assets/welcome.JPG";
+import React from 'react';
+import welcome from '../../assets/welcome.JPG';
 
-const WelcomeImage = () => {
+function WelcomeImage() {
   return (
     <div>
       <div className="absolute">
@@ -12,6 +12,6 @@ const WelcomeImage = () => {
       <img className="w-full h-52" src={welcome} alt="" />
     </div>
   );
-};
+}
 
 export default WelcomeImage;

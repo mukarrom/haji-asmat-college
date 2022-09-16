@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import PageHeading from "../components/PageHeading";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
 
-const AdmitForm = () => {
+function AdmitForm() {
   return (
     <div>
       <PageHeading>
@@ -50,7 +50,7 @@ const AdmitForm = () => {
               <div className="h6">Date of Birth</div>
               <input type="date" name="date" className="inputMedium" required />
             </div>
-            {/* Email*/}
+            {/* Email */}
             <div className="flex flex-col">
               <div className="h6">Email</div>
               <input
@@ -61,7 +61,7 @@ const AdmitForm = () => {
                 required
               />
             </div>
-            {/* Email*/}
+            {/* Email */}
             <div className="flex flex-col">
               <div className="h6">Phone number</div>
               <input
@@ -81,7 +81,7 @@ const AdmitForm = () => {
               <input
                 type="radio"
                 name="radio-1"
-                class="radio block radio-primary"
+                className="radio block radio-primary"
                 checked
               />
             </div>
@@ -90,7 +90,7 @@ const AdmitForm = () => {
               <input
                 type="radio"
                 name="radio-1"
-                class="radio block radio-primary"
+                className="radio block radio-primary"
               />
             </div>
             <div className="flex justify-center items-center space-x-3 h-4">
@@ -98,7 +98,7 @@ const AdmitForm = () => {
               <input
                 type="radio"
                 name="radio-3"
-                class="radio block radio-primary"
+                className="radio block radio-primary"
               />
             </div>
           </div>
@@ -111,6 +111,6 @@ const AdmitForm = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AdmitForm;

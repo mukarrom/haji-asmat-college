@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import NoticeBoard from "../components/Notice/NoticeBoard";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import NoticeBoard from '../components/Notice/NoticeBoard';
 // import NoticeCard from "../components/Notice/NoticeCard";
-import PageHeading from "../components/PageHeading";
+import PageHeading from '../components/PageHeading';
 
-const Notice = () => {
+function Notice() {
   return (
     <div>
       <PageHeading>
@@ -24,10 +24,10 @@ const Notice = () => {
         <div className="main">
           <NoticeBoard />
         </div>
-        <div className="aside"></div>
+        <div className="aside" />
       </div>
     </div>
   );
-};
+}
 
 export default Notice;

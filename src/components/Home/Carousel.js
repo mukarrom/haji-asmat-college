@@ -1,49 +1,49 @@
-import React from "react";
-import pic3 from "../../assets/college3.jpg";
-import pic4 from "../../assets/college4.jpg";
+import React from 'react';
+import pic3 from '../../assets/college3.jpg';
+import pic4 from '../../assets/college4.jpg';
 
-const Carousel = () => {
+function Carousel() {
   return (
     <div className="">
-      <div class="carousel w-full h-[70vh]">
-        <div id="item2" class="carousel-item w-full">
+      <div className="carousel w-full h-[70vh]">
+        <div id="item2" className="carousel-item w-full">
           <img
             src="http://kodeforest.net/html/uoe/extra-images/slider2.jpg"
-            class="w-full"
+            className="w-full"
             alt=""
           />
         </div>
-        <div id="item1" class="carousel-item w-full">
+        <div id="item1" className="carousel-item w-full">
           <img
             src="https://demo.web3canvas.com/themeforest/unisco/images/slider-3.jpg"
-            class="w-full"
+            className="w-full"
             alt=""
           />
         </div>
 
-        <div id="item3" class="carousel-item w-full">
-          <img src={pic3} class="w-full" alt="" />
+        <div id="item3" className="carousel-item w-full">
+          <img src={pic3} className="w-full" alt="" />
         </div>
-        <div id="item4" class="carousel-item w-full">
-          <img src={pic4} class="w-full" alt="" />
+        <div id="item4" className="carousel-item w-full">
+          <img src={pic4} className="w-full" alt="" />
         </div>
       </div>
-      <div class="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" class="btn btn-xs  bg-primary text-white">
+      <div className="flex justify-center w-full py-2 gap-2">
+        <a href="#item1" className="btn btn-xs  bg-primary text-white">
           1
         </a>
-        <a href="#item2" class="btn btn-xs  bg-primary text-white">
+        <a href="#item2" className="btn btn-xs  bg-primary text-white">
           2
         </a>
-        <a href="#item3" class="btn btn-xs  bg-primary text-white">
+        <a href="#item3" className="btn btn-xs  bg-primary text-white">
           3
         </a>
-        <a href="#item4" class="btn btn-xs  bg-primary text-white">
+        <a href="#item4" className="btn btn-xs  bg-primary text-white">
           4
         </a>
       </div>
     </div>
   );
-};
+}
 
 export default Carousel;

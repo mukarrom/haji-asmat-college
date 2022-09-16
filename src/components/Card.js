@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Card = ({ cardHeading, children}) => {
+function Card({ cardHeading, children }) {
   return (
     <div>
       <div className="h-96 shadow-xl m-5 bg-base-100 rounded-2xl rounded-tl-none overflow-clip pb-14">
@@ -8,11 +8,11 @@ const Card = ({ cardHeading, children}) => {
           {cardHeading}
         </div>
         <div className="px-3 pt-5 pb-10 h-full overflow-y-auto">
-            {children}
+          {children}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Card;
