@@ -1,7 +1,8 @@
-import React from "react";
-import useNoticeFetch from "../../hooks/useNoticeFetch";
+/* eslint-disable jsx-a11y/control-has-associated-label */
+import React from 'react';
+import useNoticeFetch from '../../hooks/useNoticeFetch';
 
-const NoticeBoard = () => {
+function NoticeBoard() {
   const [notice] = useNoticeFetch();
   return (
     <div>
@@ -15,8 +16,8 @@ const NoticeBoard = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th> */}
-              <th></th>
-              <th className="hidden sm:block"></th>
+              <th />
+              <th className="hidden sm:block" />
             </tr>
           </thead>
           <tbody>
@@ -28,12 +29,14 @@ const NoticeBoard = () => {
                     {heading}
                     <br />
                     <span className="badge badge-ghost badge-sm">
-                      Published on {date}
+                      Published on
+                      {' '}
+                      {date}
                     </span>
                   </a>
                 </td>
                 <th className="hidden sm:block py-8">
-                  <button className="btn btn-ghost btn-xs">Read more...</button>
+                  <button type="button" className="btn btn-ghost btn-xs">Read more...</button>
                 </th>
               </tr>
             ))}
@@ -52,6 +55,6 @@ const NoticeBoard = () => {
       </div>
     </div>
   );
-};
+}
 
 export default NoticeBoard;

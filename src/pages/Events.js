@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Event from "../components/Event/Event";
-import PageHeading from "../components/PageHeading";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Event from '../components/Event/Event';
+import PageHeading from '../components/PageHeading';
 
-const Events = () => {
+function Events() {
   return (
     <div>
       <PageHeading>
@@ -23,6 +23,6 @@ const Events = () => {
       <Event />
     </div>
   );
-};
+}
 
 export default Events;

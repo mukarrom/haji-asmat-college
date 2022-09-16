@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/asmat-logo.jpeg";
-import auth from "../../firebase.init";
-import NavItems from "./NavItems";
-import { notification } from "./Notification";
-import ProfileMenu from "./ProfileMenu";
-import { searchIcon } from "./SearchMenu";
-import SearchModal from "./SearchModal";
+import React, { useEffect } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import logo from '../../assets/asmat-logo.jpeg';
+import auth from '../../firebase.init';
+import NavItems from './NavItems';
+import notification from './Notification';
+import ProfileMenu from './ProfileMenu';
+import searchIcon from './SearchMenu';
+import SearchModal from './SearchModal';
 
-const Navbar = () => {
+function Navbar() {
   const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
 
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className="navbar bg-primary  text-white z-50 sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabindex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,12 +66,12 @@ const Navbar = () => {
         </ul>
       </div>
       {/* ---------------
-            NavBar End    
+            NavBar End
           ---------------- */}
       <div className="navbar-end">
         {/* search */}
         {searchIcon}
-        <SearchModal/>
+        <SearchModal />
         {/* notification */}
         {notification}
         {/* profile */}
@@ -79,6 +79,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;

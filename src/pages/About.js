@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import PageHeading from "../components/PageHeading";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PageHeading from '../components/PageHeading';
 
-const About = () => {
+function About() {
   return (
     <div>
       <PageHeading>
@@ -20,6 +20,6 @@ const About = () => {
       </PageHeading>
     </div>
   );
-};
+}
 
 export default About;

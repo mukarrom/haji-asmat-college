@@ -1,17 +1,17 @@
-import React from "react";
-import college from "../../assets/college.jpg";
+import React from 'react';
+import college from '../../assets/college.jpg';
 
-const AboutCollege = () => {
+function AboutCollege() {
   return (
     <div>
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src={college} class="w-96 max-h-96 rounded-lg shadow-2xl" />
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row">
+          <img src={college} className="w-96 max-h-96 rounded-lg shadow-2xl" />
           <div>
-            <h1 class="text-1xl font-bold text-start">
+            <h1 className="text-1xl font-bold text-start">
               Welcome To Haji Asmat College
             </h1>
-            <p class="py-6 text-start">
+            <p className="py-6 text-start">
               The University of Dhaka (also known as Dhaka University, or
               abbreviated as DU) is a public research university located in
               Dhaka, Bangladesh. It is the oldest university in Bangladesh. On
@@ -27,7 +27,7 @@ const AboutCollege = () => {
               it became the focal point of progressive and democratic movements
               in Pakistan. Its students and teachers played a central role in
               the rise of Bengali nationalism and the independence of Bangladesh
-              in 1971. The university's distinguished alumni include Muhammad
+              in 1971. The university`s distinguished alumni include Muhammad
               Yunus (winner 2006 Nobel Peace Prize, pioneer of microcredit),
               Natyaguru Nurul Momen (pioneer litereteur, theatre & cultural
               doyen; who was both an early student and teacher of DU), Muhammad
@@ -36,9 +36,9 @@ const AboutCollege = () => {
           </div>
         </div>
       </div>
-      <div class="divider gap-1"></div>
+      <div className="divider gap-1" />
     </div>
   );
-};
+}
 
 export default AboutCollege;

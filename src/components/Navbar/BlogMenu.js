@@ -1,9 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const BlogMenu = () => {
-
   const blogMenu = (
-    <li tabindex={0}>
+    <li tabIndex={0}>
       <NavLink to="blogs">
         Blog & Event
         {/* svg for large screen */}
@@ -36,8 +35,8 @@ const BlogMenu = () => {
         </li>
       </ul>
     </li>
-  );  
-  return [blogMenu]
+  );
+  return [blogMenu];
 };
 
 export default BlogMenu;
