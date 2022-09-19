@@ -30,12 +30,12 @@ const AboutMenu = () => {
         <li className="hover:bg-[#c82848] rounded-xl">
           <NavLink to="/history">Collage History</NavLink>
         </li>
-        <li className="hover:bg-[#c82848] rounded-xl">
+        {/* <li className="hover:bg-[#c82848] rounded-xl">
           <NavLink to="/governing">Governing Body</NavLink>
         </li>
         <li className="hover:bg-[#c82848] rounded-xl">
           <NavLink to="/about">About us</NavLink>
-        </li>
+        </li> */}
       </ul>
     </li>
   );

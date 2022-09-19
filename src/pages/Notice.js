@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BlogCard from '../components/Blog/BlogCard';
+import EventCard from '../components/Event/EventCard';
 import NoticeBoard from '../components/Notice/NoticeBoard';
-// import NoticeCard from "../components/Notice/NoticeCard";
+import MostRead from '../components/Notice/MostRead';
 import PageHeading from '../components/PageHeading';
 
 function Notice() {
@@ -20,12 +22,16 @@ function Notice() {
           </ul>
         </div>
       </PageHeading>
-      <div className="">
-        <div className="main">
+      <section className="w-full flex mt-8">
+        <main className="w-3/4 px-6">
           <NoticeBoard />
-        </div>
-        <div className="aside" />
-      </div>
+        </main>
+        <aside className="w-1/4">
+          <MostRead />
+          <EventCard />
+          <BlogCard />
+        </aside>
+      </section>
     </div>
   );
 }
