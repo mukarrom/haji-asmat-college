@@ -4,6 +4,7 @@ import BlogCard from '../components/Blog/BlogCard';
 import EventCard from '../components/Event/EventCard';
 import NoticeCard from '../components/Notice/NoticeCard';
 import PageHeading from '../components/PageHeading';
+import mujib from '../assets/mujib.png';
 
 function Mujib() {
   return (
@@ -26,7 +27,7 @@ function Mujib() {
       <section className="flex w-full">
         <main className="w-3/4 px-6 mt-8">
           <img
-            src="http://www.rimc.edu.bd/f/mujib.png"
+            src={mujib}
             alt="Mujib Corner"
             className="w-full"
           />
