@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BlogCard from '../Blog/BlogCard';
+import EventCard from '../Event/EventCard';
+import NoticeCard from '../Notice/NoticeCard';
 import PageHeading from '../PageHeading';
 
 function CollageHistory() {
@@ -19,94 +22,47 @@ function CollageHistory() {
           </ul>
         </div>
       </PageHeading>
-      {/* ------- History -------- */}
-      <h1 className="h1">সংক্ষিপ্ত বর্ণনা</h1>
-      <p className="p">
-        উন্নত আদর্শ, দেশপ্রেম ও মনুষ্যত্ব বিকাশের লক্ষ্যে নারী শিক্ষাপ্রসারের
-        মহান ব্রত নিয়ে ১৯৮৭ সালে প্রতিষ্ঠিত হয় রফিকুল ইসলাম মহিলা কলেজ।
-        ব্যতিক্রমী এই শিক্ষাপ্রতিষ্ঠানটি বন্দর নগরী ভৈরব এর বাণিজ্যিক কোলাহল
-        থেকে দূরে এবং শহরতলির নিরিবিলি মনোরম পরিবেশে অবস্থিত। জমির পরিমাণ: ২.১৪
-        একর অধীতশাখা ও বিষয়: উচ্চ মাধ্যমিক- বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা
-        শাখায় ২০টি বিষয় পড়ানো হয়। স্নাতক (পাস)- বিএ, বিএসএস, বিবিএস ১১ টি বিষয়
-        পড়ানো হয়। স্নাতক (সম্মান)-ইংরেজি, সমাজকর্ম, হিসাববিজ্ঞান, ব্যবস্থাপনা, ও
-        রাষ্ট্রবিজ্ঞানসহ মোট ৫টি বিষয়ে সম্মান কোর্স পড়ানো হয়। মাস্টার্স শেষ পর্ব
-        - সমাজকর্ম ও রাষ্ট্রবিজ্ঞান শিক্ষক সংখ্যা - ৬১ জন কর্মচারী সংখ্যা- ২০ জন
-        অবকাঠামো - ২(দুই)টি ৪তলা ও ১টি ৫তলা পাকা একাডেমিক ভবন ও ১(এক)টি টিনশেড
-        পাঠাগারে পুস্তক সংখ্যা- ৫১২১টি মেয়েদের মসজিদ-১টি কলেজ ক্যান্টিন- ১টি
-        হোস্টেল - ৫(পাঁচ) তলা ও আলাদাভাবে আরও ১(এক) তলা পাকা সুরম্য হোস্টেল;২টি
-        টিনশেড হোস্টেল। যেখানে দূরদূরান্তের। ৭০০ ছাত্রী অবস্থান করে। কলেজটি
-        কিশোরগঞ্জ জেলার সর্ববৃহৎ নারী শিক্ষা বিদ্যাপীঠ হিসেবে সকলের দৃষ্টি
-        আকর্ষণ করেছে।
-      </p>
-      <h1 className="h1">ইতিহাস</h1>
-      <p className="p">
-        ভৈরবের বিশিষ্ট সৃজনশীল সমাজকর্মী, ঢাকা বিশ্ববিদ্যালয়ের সার্জেন্ট জহুরুল
-        হক হলের ১৯৭২-৭৩ সেশনে নির্বাচিত জিএস বীরমুক্তিযোদ্ধা শিক্ষানুরাগী
-        আলহাজ্ব মোঃ রফিকুল ইসলাম এর উদ্যোগে এবং তাঁর পরিবার ও ভৈরবের
-        শিক্ষানুরাগী ব্যক্তিবর্গের সহযোগিতায় ১৯৮৭ সালে রফিকুল ইসলাম মহিলা কলেজের
-        আত্মৃপ্রকাশ ঘটে। প্রতিষ্ঠাকালে কলেজটির ছাত্রী সংখ্যা ছিল মাত্র ৮২ জন।
-        প্রতিষ্ঠাকালীন অধ্যক্ষ ছিলেন প্রাক্তন সরকারি কর্মকর্তা মরহুম আবুল
-        হাশেম।কলেজের প্রতিষ্ঠাতা আলহাজ্ব মোঃ রফিকুল ইসলাম এর ঐকান্তিক প্রচেষ্ঠায়
-        কলেজ পরিচালনা পরিষদের সদস্য, অধ্যক্ষ ও শিক্ষক কর্মচারীদের সহযোগিতায়
-        প্রতিষ্ঠাকাল থেকেই এই কলেজ আকর্ষণীয় ফলাফল করতে সক্ষম হয়েছে। প্রায়
-        প্রতিবারই পাশের হারের দিক থেকেই এই কলেজের অবস্থান ছিল কিশোরগঞ্জ জেলার
-        শীর্ষে। এইচএসসি পরীক্ষায় ধারাবাহিক সাফল্য, শিক্ষা উপযোগী সুন্দর
-        প্রাকৃতিক পরিবেশ ও সাংস্কৃতিক কাযর্ক্রমে অংশগ্রহণের স্বীকৃতিস্বরূপ ২০০২
-        সালে কলেজটি জাতীয় পযার্য়ে শ্রেষ্ঠ কলেজের পুরস্কার অজর্ন করে। এই বছরই
-        কলেজের মানবিক বিভাগের দুইজন ছাত্রী ঢাকা বোর্ডের মেধা তালিকায় মেয়েদের
-        মধ্যে মনিরা ইয়াসমিন আঁখি ও ফারজানা আহমেদ জেরিন যথাক্রমে ৬ষ্ঠ ও ১০ম স্থান
-        অধিকার করে। ২০০৪ সালে এই কলেজের সমাজকর্ম বিভাগের সহকারী অধ্যাপক মোঃ
-        শহীদুল্লাহ জাতীয় পযার্য়ে শ্রেষ্ঠ শিক্ষকের পুরস্কার অজর্ন করেন। ২০০৬ সালে
-        এই কলেজে স্নাতক পাস ও অনার্স কোর্স চালু হয়। ২০১৯ সালে কলেজটি জাতীয়
-        বিশ্ববিদ্যালয় কতৃক প্রাক মডেল কলেজ হিসেবে স্বীকৃতি লাভ করে
-      </p>
-      <h1 className="h1">সংক্ষিপ্ত বর্ণনা</h1>
-      <p className="p">
-        উন্নত আদর্শ, দেশপ্রেম ও মনুষ্যত্ব বিকাশের লক্ষ্যে নারী শিক্ষাপ্রসারের
-        মহান ব্রত নিয়ে ১৯৮৭ সালে প্রতিষ্ঠিত হয় রফিকুল ইসলাম মহিলা কলেজ।
-        ব্যতিক্রমী এই শিক্ষাপ্রতিষ্ঠানটি বন্দর নগরী ভৈরব এর বাণিজ্যিক কোলাহল
-        থেকে দূরে এবং শহরতলির নিরিবিলি মনোরম পরিবেশে অবস্থিত। জমির পরিমাণ: ২.১৪
-        একর অধীতশাখা ও বিষয়: উচ্চ মাধ্যমিক- বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা
-        শাখায় ২০টি বিষয় পড়ানো হয়। স্নাতক (পাস)- বিএ, বিএসএস, বিবিএস ১১ টি বিষয়
-        পড়ানো হয়। স্নাতক (সম্মান)-ইংরেজি, সমাজকর্ম, হিসাববিজ্ঞান, ব্যবস্থাপনা, ও
-        রাষ্ট্রবিজ্ঞানসহ মোট ৫টি বিষয়ে সম্মান কোর্স পড়ানো হয়। মাস্টার্স শেষ পর্ব
-        - সমাজকর্ম ও রাষ্ট্রবিজ্ঞান শিক্ষক সংখ্যা - ৬১ জন কর্মচারী সংখ্যা- ২০ জন
-        অবকাঠামো - ২(দুই)টি ৪তলা ও ১টি ৫তলা পাকা একাডেমিক ভবন ও ১(এক)টি টিনশেড
-        পাঠাগারে পুস্তক সংখ্যা- ৫১২১টি মেয়েদের মসজিদ-১টি কলেজ ক্যান্টিন- ১টি
-        হোস্টেল - ৫(পাঁচ) তলা ও আলাদাভাবে আরও ১(এক) তলা পাকা সুরম্য হোস্টেল;২টি
-        টিনশেড হোস্টেল। যেখানে দূরদূরান্তের। ৭০০ ছাত্রী অবস্থান করে। কলেজটি
-        কিশোরগঞ্জ জেলার সর্ববৃহৎ নারী শিক্ষা বিদ্যাপীঠ হিসেবে সকলের দৃষ্টি
-        আকর্ষণ করেছে।
-      </p>
-      <h1 className="h1">পাসের হার</h1>
-      <p>
-        উচ্চমাধ্যমিক এ ২০২০ সালে ১৫৯ টি জিপিএ ফাইভ সহ শতভাগ পাস। স্নাতক-৯৭%,
-        অনার্স-৯৯%
-      </p>
-      <h1 className="h1">অর্জন</h1>
-      <p>
-        জাতীয় পযার্য়ে শ্রেষ্ঠ কলেজের পুরস্কার অজর্ন, জাতীয় বিশ্ববিদ্যালয় কর্তৃক
-        প্রাক মডেল কলেজের স্বীকৃতি। কিশোরগঞ্জ জেলায় উচ্চ মাধ্যমিক ফলাফলে
-        একাধিকবার প্রথম হওয়ার গৌরব অর্জন। পাশ্ববর্তী ৬টি জেলার ছাত্রী অভিভাবকদের
-        আস্থা অর্জন। একজন শিক্ষকের শিক্ষকতায় জাতীয় পুরুষ্কার লাভ, ক্রিকেট খেলায়
-        জাতীয় পর্যায়ে রানার্স আপ হওয়া এবং ক্রিড়া শিক্ষকের কিশোরগঞ্জ জেলায়
-        বাংলাদেশ স্কাউটের সহকারী ট্রনিং লিডারের নিয়োগ লাভ গৌরব অর্জন করে।
-        ক্রিড়া।
-      </p>
-      <h1 className="h1">ভবিষ্যৎ পরিকল্পনা </h1>
-      <p>
-        তথ্য ও প্রযুক্তির মাধ্যমে শিক্ষা দান, দরিদ্র ও মেধাবী ছাত্রীদের
-        আত্মকর্মসংস্থানমূলক প্রশিক্ষণের ব্যবস্থা।
-      </p>
-      <h1 className="h1">ছাত্রীর সংখ্যা</h1>
-      <p>
-        (শ্রেণীভিত্তিক) মোট-২০২২, একাদশ-(২০২০-২০২১) ৮১০,
-        দ্বাদশ--(২০১৯-২০২০) ৮৯৭, স্নাতক (পাস) ১ম বর্ষ-৩৮, ২য় বর্ষ- ৪৩, ৩য় বর্ষ-৩৭,
-        স্নাতক (সম্মান) ১ম বর্ষ- ২০০, ২য় বর্ষ-৯২, ৩য় বর্ষ- ৫৫, ৪র্থ বর্ষ-৪০ ।
-        অনার্স (১ম বর্ষ-৪র্থ অনার্স (১ম বর্ষ-৪র্থঃ মাস্টার্স শেষ পর্ব- (২০১৮-১৯)
-        সমাজকর্ম- ৪৫ জন, রাষ্ট্রবিজ্ঞান- ৩৪ জন মোটঃ ৭৯ জন ডিগ্রি (পাস)
-      </p>
-
+      <section className="flex w-full">
+        <main className="w-3/4 px-6">
+          {/* ------- History -------- */}
+          <h1 className="h1 mt-8">সংক্ষিপ্ত বর্ণনা</h1>
+          <p className="p text-lg text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus necessitatibus molestiae facilis ad repellendus distinctio earum unde illum. Reprehenderit sequi fuga quia cum? Ad iure eveniet optio. Nostrum, corporis? Hic laudantium quo quae ducimus molestiae, consequatur fugit cupiditate nulla quis qui facere deserunt libero aliquid facilis aut nihil eaque sequi porro nobis perspiciatis ad? Consequuntur, sit! Debitis maxime suscipit error soluta architecto enim assumenda facilis eos veritatis, culpa repudiandae, quidem, qui maiores impedit. Porro modi aut dolorum fuga quam vel ducimus, pariatur eveniet optio sequi expedita blanditiis sint labore voluptas repellendus accusamus omnis! Vitae quas sapiente, aliquam laboriosam eligendi labore, consequuntur sed saepe soluta sit, hic provident perferendis reiciendis natus a quis nemo! Perspiciatis fugiat voluptate itaque, dolore facere atque, corporis amet est obcaecati modi, sed eum! Reprehenderit nisi iure, adipisci eius culpa officia similique tempore possimus ex aperiam, nihil soluta atque suscipit commodi voluptatum dolorem aliquid ullam ea. Similique nam voluptate exercitationem voluptatem cupiditate saepe quos eum impedit adipisci enim libero sapiente molestiae repudiandae consequuntur dicta optio sunt facilis quisquam beatae, minima officia dolor odit ut atque. Pariatur quidem eaque labore vitae! Voluptas quos corporis odio tempore? Mollitia accusamus quisquam unde adipisci repellat expedita exercitationem nam beatae praesentium non?
+          </p>
+          <h1 className="h1">ইতিহাস</h1>
+          <p className="p p text-lg text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, minus, deleniti dolor quibusdam est doloremque eligendi commodi consequatur ea eaque similique soluta magnam corporis tempore. Facere necessitatibus aut dolorum doloremque quae beatae, inventore maxime? Facere exercitationem quisquam suscipit modi sequi eos dicta eius. Ipsum omnis quibusdam, facilis blanditiis odio atque maxime eius esse pariatur minima ex assumenda, voluptatibus officia repellendus iste! Sunt odit odio sed minima, impedit eveniet vel? Quas ad, ipsa quod, quam fugiat libero voluptate excepturi voluptatem voluptates perspiciatis dolorem minima autem veritatis culpa, eius ex hic rerum reiciendis modi itaque illum. Reiciendis, quam tempora optio voluptates nobis blanditiis eos atque esse earum quos minus non animi modi fugit numquam illo adipisci eveniet repudiandae pariatur quo nemo quisquam sunt. Nulla maiores debitis nostrum unde ipsum necessitatibus mollitia incidunt possimus qui beatae cum, cumque in quidem est a consectetur magnam veritatis vel autem dolorum nihil eveniet! Quis earum libero quia, iure sunt facilis porro eligendi! Corporis placeat ex exercitationem modi, nihil quod in omnis illum fugiat possimus recusandae sit culpa optio molestias eum voluptate facilis quos beatae, nisi perferendis molestiae. Totam, fuga. Dicta, sint reprehenderit magnam veniam velit laudantium maxime ex voluptatibus quas a, minima impedit ut praesentium dolores eligendi ea tempore aut quaerat. Alias sint repellat dolorem aut, esse in sapiente amet doloribus deserunt mollitia expedita, animi harum, ducimus aperiam voluptas. Nam, autem ducimus? Culpa, ipsa asperiores delectus maiores cumque, minus voluptatum rerum magnam accusamus in at voluptatem natus praesentium consequuntur, consequatur nihil vero! Harum quod at aliquam.
+          </p>
+          <h1 className="h1">সংক্ষিপ্ত বর্ণনা</h1>
+          <p className="p text-lg text-justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo unde voluptatum libero. Ipsa sit quasi fuga id iure tenetur illum, molestias magni. Aperiam magnam error, veniam impedit beatae necessitatibus fugiat fuga modi mollitia. Possimus facilis assumenda, quia sit ipsum, iste odio recusandae commodi, non natus et repudiandae illo ut modi. Delectus vero at natus architecto accusantium animi corrupti blanditiis placeat voluptatibus earum, laboriosam, qui, autem eos molestiae eius. Vel quibusdam illum enim voluptatum pariatur soluta reiciendis doloribus? Quos voluptates odio temporibus incidunt reprehenderit suscipit harum, in sit, inventore molestias non quo molestiae dolorem nostrum placeat dolorum voluptas nam. Excepturi, perspiciatis.
+          </p>
+          <h1 className="h1">পাসের হার</h1>
+          <p className="p text-lg text-justify">
+            উচ্চমাধ্যমিক এ ২০২০ সালে ১৫৯ টি জিপিএ ফাইভ সহ শতভাগ পাস। স্নাতক-৯৭%,
+            অনার্স-৯৯%
+          </p>
+          <h1 className="h1">অর্জন</h1>
+          <p className="p text-lg text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati distinctio enim eaque praesentium inventore, ad dolorem vero, ullam ipsam recusandae excepturi ratione soluta quisquam laborum? Iusto, nemo. Eum voluptas temporibus dicta consequatur dolorum porro vel voluptate voluptatum, sapiente maiores tempore nihil quo, quas, distinctio dolorem officiis ex totam voluptates!
+          </p>
+          <h1 className="h1">ভবিষ্যৎ পরিকল্পনা </h1>
+          <p className="p text-lg text-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum hic ea totam at veniam modi facilis mollitia repudiandae non quisquam labore quasi consequuntur nihil, maiores velit unde cumque, ab deserunt. Impedit fuga minima ipsa debitis tenetur odit eum corporis. Recusandae.
+          </p>
+          <h1 className="h1">ছাত্রীর সংখ্যা</h1>
+          <p className="p text-lg text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo repellendus ad dolores exercitationem tempora inventore. Ea necessitatibus repellendus iusto modi quam velit eveniet magnam omnis id sint corporis expedita officiis, sequi labore nobis nihil eos? Velit eos reprehenderit iste obcaecati quia a laudantium voluptatum animi nobis nihil amet debitis culpa, quos autem voluptatibus in atque dolore itaque quaerat commodi necessitatibus laborum rem ex? Qui nobis atque consectetur eius. Ex aspernatur consequatur itaque eius! Dolores sunt explicabo illo, rem sed, sequi quas nisi dolor fugit eius nesciunt magni quibusdam facilis provident voluptatum distinctio dignissimos sit nihil deleniti exercitationem vitae! Dicta natus dignissimos veniam repellat, nesciunt corporis animi ipsam dolorum voluptatem laborum ad. Voluptatem tempora non cupiditate laborum ut quos placeat.
+          </p>
+        </main>
+        <aside className="w-1/4">
+          <div className="">
+            <NoticeCard />
+            <EventCard />
+            <BlogCard />
+          </div>
+        </aside>
+      </section>
     </div>
   );
 }

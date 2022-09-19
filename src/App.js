@@ -15,6 +15,7 @@ import Notice from './pages/Notice';
 import Events from './pages/Events';
 import CollageHistory from './components/About/CollageHistory';
 import GovBody from './components/About/GovBody';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/notice" element={<Notice />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registration />} />
       </Routes>

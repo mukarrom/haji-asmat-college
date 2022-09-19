@@ -30,5 +30,7 @@ module.exports = {
     'jsx-a11y/alt-text': 1,
     'jsx-a11y/no-noninteractive-tabindex': 0,
     'global-require': 1,
+    'react/no-unescaped-entities': 1,
+    'max-len': 0,
   },
 };
