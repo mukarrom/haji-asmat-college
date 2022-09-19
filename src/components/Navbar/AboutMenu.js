@@ -1,10 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
-const BlogMenu = () => {
-  const blogMenu = (
+const AboutMenu = () => {
+  const aboutMenu = (
     <li tabIndex={0} className="hover:bg-[#c82848] rounded-xl">
-      <NavLink to="blogs">
-        Blog & Event
+      <Link to="history">
+        About
         {/* svg for large screen */}
         {/* <svg
           className="fill-current hidden lg:block"
@@ -25,18 +25,21 @@ const BlogMenu = () => {
         >
           <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
         </svg> */}
-      </NavLink>
+      </Link>
       <ul className="p-2 bg-primary">
         <li className="hover:bg-[#c82848] rounded-xl">
-          <NavLink to="blogs">Blogs</NavLink>
+          <NavLink to="/history">Collage History</NavLink>
         </li>
         <li className="hover:bg-[#c82848] rounded-xl">
-          <NavLink to="events">Events</NavLink>
+          <NavLink to="/governing">Governing Body</NavLink>
+        </li>
+        <li className="hover:bg-[#c82848] rounded-xl">
+          <NavLink to="/about">About us</NavLink>
         </li>
       </ul>
     </li>
   );
-  return [blogMenu];
+  return [aboutMenu];
 };
 
-export default BlogMenu;
+export default AboutMenu;

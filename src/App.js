@@ -13,6 +13,8 @@ import Logo from './components/Logo/Logo';
 import Navbar from './components/Navbar/Navbar';
 import Notice from './pages/Notice';
 import Events from './pages/Events';
+import CollageHistory from './components/About/CollageHistory';
+import GovBody from './components/About/GovBody';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/admission" element={<AdmitForm />} />
         <Route path="/about" element={<About />} />
+        <Route path="/history" element={<CollageHistory />} />
+        <Route path="/governing" element={<GovBody />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/events" element={<Events />} />
         <Route path="/notice" element={<Notice />} />
