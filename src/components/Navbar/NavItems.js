@@ -26,6 +26,9 @@ const NavItems = () => {
       <li className="hover:bg-[#c82848] rounded-xl">
         <NavLink to="/notice">Notice</NavLink>
       </li>
+      <li className="hover:bg-[#c82848] rounded-xl">
+        <NavLink to="/gallery">Gallery</NavLink>
+      </li>
       {/* <li>
         <NavLink to="/syllabus">Syllabus</NavLink>
       </li>

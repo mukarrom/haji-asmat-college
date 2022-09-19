@@ -9,7 +9,6 @@ function Cards() {
       <NoticeCard />
       <EventCard />
       <BlogCard />
-
     </div>
   );
 }
