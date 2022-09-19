@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BlogCard from '../components/Blog/BlogCard';
 import Event from '../components/Event/Event';
+import EventCard from '../components/Event/EventCard';
+import NoticeCard from '../components/Notice/NoticeCard';
 import PageHeading from '../components/PageHeading';
 
 function Events() {
@@ -20,7 +23,16 @@ function Events() {
           </ul>
         </div>
       </PageHeading>
-      <Event />
+      <section className="w-full flex mt-8">
+        <main className="w-3/4 px-6">
+          <Event />
+        </main>
+        <aside className="w-1/4">
+          <NoticeCard />
+          <EventCard />
+          <BlogCard />
+        </aside>
+      </section>
     </div>
   );
 }
