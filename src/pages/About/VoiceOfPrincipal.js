@@ -22,12 +22,12 @@ function VoiceOfPrincipal() {
         </div>
       </PageHeading>
       <section className="w-full flex mt-8">
-        <main className="w-3/4 px-6">
+        <main className="lg:w-3/4 px-6">
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJpbmNpcGFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
-              className="float-left mr-4 mb-2 w-80 h-96"
+              className="lg:float-left mr-4 mb-2 w-80 h-96"
             />
             <h2 className="h2 text-left">Voice Of Principal</h2>
             <p className="p text-lg text-justify">
@@ -82,7 +82,7 @@ function VoiceOfPrincipal() {
             </p>
           </div>
         </main>
-        <aside className="w-1/4">
+        <aside className="w-1/4 hidden lg:block">
           <NoticeCard />
           <EventCard />
           <BlogCard />

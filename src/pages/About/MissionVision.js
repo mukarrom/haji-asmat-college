@@ -22,7 +22,7 @@ function MissionVision() {
         </div>
       </PageHeading>
       <section className="w-full flex mt-8">
-        <main className="w-3/4 px-8 lg:px-28">
+        <main className="lg:w-3/4 px-8 lg:px-28">
           <h1 className="h1 text-left">MISSION</h1>
           <p className="p text-justify text-lg">
             Our mission is to produce highly skilled manpower, visionary leaders
@@ -47,7 +47,7 @@ function MissionVision() {
             improvement in all that we do.
           </p>
         </main>
-        <aside className="w-1/4">
+        <aside className="w-1/4 hidden lg:block">
           <NoticeCard />
           <EventCard />
           <BlogCard />
