@@ -6,12 +6,12 @@ function AboutCollege() {
     <div>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={college} className="w-96 max-h-96 rounded-lg shadow-2xl" />
+          <img src={college} className="w-96 max-h-96 rounded-lg shadow-2xl" alt="" />
           <div>
-            <h1 className="text-1xl font-bold text-start">
-              Welcome To Haji Asmat College
+            <h1 className="h2 text-primary text-bold">
+              এক নজরে
             </h1>
-            <p className="py-6 text-start">
+            <p className="py-6 text-justify">
               The University of Dhaka (also known as Dhaka University, or
               abbreviated as DU) is a public research university located in
               Dhaka, Bangladesh. It is the oldest university in Bangladesh. On

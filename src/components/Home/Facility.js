@@ -3,8 +3,9 @@ import React from 'react';
 function Facility() {
   return (
     <div>
-      <div className="flex w-full bg-primary">
-        <div className="grid h-14 flex-grow card rounded-none place-items-center text-white" />
+      <div className="w-full bg-primary py-3">
+        <h3 className="h3 text-white">Welcome to Hazi Asmat College</h3>
+        {/* <div className="grid h-14 flex-grow card rounded-none place-items-center text-white" />
         <div className="divider gap-1" />
         <div className="grid h-14 flex-grow card rounded-none place-items-center hover:bg-primary_lighter cursor-pointer text-white">
           LIBRARY
@@ -27,7 +28,7 @@ function Facility() {
         </div>
         <div className="divider gap-1" />
         <div className="grid h-14 flex-grow card rounded-none place-items-center text-white" />
-        <div className="divider gap-1" />
+        <div className="divider gap-1" /> */}
       </div>
     </div>
   );

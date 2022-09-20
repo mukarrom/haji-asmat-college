@@ -24,10 +24,10 @@ function Events() {
         </div>
       </PageHeading>
       <section className="w-full flex mt-8">
-        <main className="w-3/4 px-6">
+        <main className="lg:w-3/4 px-6">
           <Event />
         </main>
-        <aside className="w-1/4">
+        <aside className="w-1/4 hidden lg:block">
           <NoticeCard />
           <EventCard />
           <BlogCard />

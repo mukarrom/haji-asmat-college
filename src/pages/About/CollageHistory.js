@@ -23,7 +23,7 @@ function CollageHistory() {
         </div>
       </PageHeading>
       <section className="flex w-full">
-        <main className="w-3/4 px-6">
+        <main className="lg:w-3/4 px-6">
           {/* ------- History -------- */}
           <h1 className="h1 mt-8">সংক্ষিপ্ত বর্ণনা</h1>
           <p className="p text-lg text-justify">
@@ -55,7 +55,7 @@ function CollageHistory() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo repellendus ad dolores exercitationem tempora inventore. Ea necessitatibus repellendus iusto modi quam velit eveniet magnam omnis id sint corporis expedita officiis, sequi labore nobis nihil eos? Velit eos reprehenderit iste obcaecati quia a laudantium voluptatum animi nobis nihil amet debitis culpa, quos autem voluptatibus in atque dolore itaque quaerat commodi necessitatibus laborum rem ex? Qui nobis atque consectetur eius. Ex aspernatur consequatur itaque eius! Dolores sunt explicabo illo, rem sed, sequi quas nisi dolor fugit eius nesciunt magni quibusdam facilis provident voluptatum distinctio dignissimos sit nihil deleniti exercitationem vitae! Dicta natus dignissimos veniam repellat, nesciunt corporis animi ipsam dolorum voluptatem laborum ad. Voluptatem tempora non cupiditate laborum ut quos placeat.
           </p>
         </main>
-        <aside className="w-1/4">
+        <aside className="w-1/4 hidden lg:block">
           <div className="">
             <NoticeCard />
             <EventCard />

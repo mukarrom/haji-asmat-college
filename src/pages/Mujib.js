@@ -25,12 +25,8 @@ function Mujib() {
       </PageHeading>
       {/* Main */}
       <section className="flex w-full">
-        <main className="w-3/4 px-6 mt-8">
-          <img
-            src={mujib}
-            alt="Mujib Corner"
-            className="w-full"
-          />
+        <main className="lg:w-3/4 px-6 mt-8">
+          <img src={mujib} alt="Mujib Corner" className="w-full" />
           <div className="">
             <p className="p text-lg text-justify">
               শেখ মুজিবুর রহমান (১৭ই মার্চ ১৯২০ – ১৫ই আগস্ট ১৯৭৫),
@@ -93,7 +89,7 @@ function Mujib() {
             </p>
           </div>
         </main>
-        <aside className="w-1/4">
+        <aside className="w-1/4 hidden lg:block">
           <div className="">
             <NoticeCard />
             <EventCard />
