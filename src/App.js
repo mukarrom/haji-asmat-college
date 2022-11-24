@@ -6,7 +6,7 @@ import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
-import Login from './pages/Login';
+// import Login from './pages/Login';
 import Registration from './pages/Registration';
 // import logo from './assets/logo.jpg'
 import Logo from './components/Logo/Logo';
@@ -20,6 +20,10 @@ import Mujib from './pages/Mujib';
 import VoiceOfChairman from './pages/About/VoiceOfChairman';
 import VoiceOfPrincipal from './pages/About/VoiceOfPrincipal';
 import MissionVision from './pages/About/MissionVision';
+import Login from './pages/authentication/Login';
+import Signup from './pages/authentication/Signup';
+import RequireAuth from './pages/authentication/RequireAuth';
+import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
   return (
@@ -46,7 +50,17 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/mujib" element={<Mujib />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Registration />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/dashboard"
+          element={(
+            <RequireAuth>
+              <Dashboard />
+            </RequireAuth>
+    )}
+        />
+
+        {/* <Route path="/register" element={<Registration />} /> */}
       </Routes>
       <Footer />
     </div>

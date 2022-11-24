@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+// import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/asmat-logo.jpeg';
-import auth from '../../firebase.init';
+// import auth from '../../firebase.init';
 import NavItems from './NavItems';
 import notification from './Notification';
 import ProfileMenu from './ProfileMenu';
@@ -10,17 +10,17 @@ import searchIcon from './SearchMenu';
 import SearchModal from './SearchModal';
 
 function Navbar() {
-  const navigate = useNavigate();
-  const [user, loading, error] = useAuthState(auth);
+  // const navigate = useNavigate();
+  // const [user, loading, error] = useAuthState(auth);
 
   const [navItems] = NavItems();
   const [profileIcon] = ProfileMenu();
 
-  useEffect(() => {
-    if (user) {
-      // navigate("/");
-    }
-  }, [user, navigate]);
+  // useEffect(() => {
+  //   if (user) {
+  //     // navigate("/");
+  //   }
+  // }, [user, navigate]);
 
   return (
     // ---------------------- New Navbar -------------------------------------
@@ -75,6 +75,7 @@ function Navbar() {
         {/* notification */}
         {notification}
         {/* profile */}
+        {/* {user ? } */}
         {profileIcon}
       </div>
     </div>

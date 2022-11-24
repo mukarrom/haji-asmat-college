@@ -23,17 +23,17 @@ const ProfileMenu = () => {
       tabIndex={0}
       className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
     >
-      <li>
+      {/* <li>
         <NavLink to="profile" className="justify-between">
           Profile
           <span className="badge">New</span>
         </NavLink>
+      </li> */}
+      <li>
+        <NavLink to="dashboard">Settings</NavLink>
       </li>
       <li>
-        <NavLink to="setting">Settings</NavLink>
-      </li>
-      <li>
-        <NavLink to="regi" onClick={() => signOut(auth)}>
+        <NavLink to="login" onClick={() => signOut(auth)}>
           Logout
         </NavLink>
       </li>

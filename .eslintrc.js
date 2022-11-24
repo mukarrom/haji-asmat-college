@@ -32,5 +32,7 @@ module.exports = {
     'global-require': 1,
     'react/no-unescaped-entities': 1,
     'max-len': 0,
+    'linebreak-style': 0,
+    'react/jsx-props-no-spreading': 1,
   },
 };
