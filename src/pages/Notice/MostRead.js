@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useNoticeFetch from '../../hooks/useNoticeFetch';
-import Card from '../Card';
+import Card from '../../components/Card';
 
 function NoticeCard() {
   const [notice] = useNoticeFetch();

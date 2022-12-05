@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogCard from '../components/Blog/BlogCard';
-import Event from '../components/Event/Event';
-import EventCard from '../components/Event/EventCard';
-import NoticeCard from '../components/Notice/NoticeCard';
-import PageHeading from '../components/PageHeading';
+import BlogCard from '../Blog/BlogCard';
+import Event from './Event';
+import EventCard from './EventCard';
+import NoticeCard from '../Notice/NoticeCard';
+import PageHeading from '../../components/PageHeading';
 
 function Events() {
   return (

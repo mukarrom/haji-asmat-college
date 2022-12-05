@@ -1,17 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import college from '../../assets/college.jpg';
+import useArticles from '../../hooks/useArticles';
 
 function AboutCollege() {
-  return (
-    <div>
-      <div className="hero">
-        <div className="hero-content flex-col lg:flex-row">
-          <img src={college} className="w-96 max-h-96 rounded-lg shadow-2xl" alt="" />
-          <div>
-            <h1 className="h2 text-primary text-bold">
-              এক নজরে
-            </h1>
-            <p className="py-6 text-justify">
+	const articles = useArticles('history');
+	const short = articles[0]?.code.slice(0, 4500);
+	const more =
+		'<a href="/history" class="font-bold text-purple-900">more...</a>';
+	// console.log(short);
+	return (
+		<div>
+			<div className="hero">
+				<div className="hero-content flex-col lg:flex-row">
+					<img
+						src={college}
+						className="w-96 max-h-96 rounded-lg shadow-2xl"
+						alt=""
+					/>
+
+					<div>
+						{/* <h1 className="h2 text-primary text-bold">{articles[0]?.title}</h1> */}
+						<span dangerouslySetInnerHTML={{ __html: `${short} ${more}` }} />
+					</div>
+					{/*   <p className="py-6 text-justify">
               The University of Dhaka (also known as Dhaka University, or
               abbreviated as DU) is a public research university located in
               Dhaka, Bangladesh. It is the oldest university in Bangladesh. On
@@ -33,12 +45,12 @@ function AboutCollege() {
               doyen; who was both an early student and teacher of DU), Muhammad
               Shahidullah (educator, philologist and linguist)
             </p>
-          </div>
-        </div>
-      </div>
-      <div className="divider gap-1" />
-    </div>
-  );
+          </div> */}
+				</div>
+			</div>
+			<div className="divider gap-1" />
+		</div>
+	);
 }
 
 export default AboutCollege;

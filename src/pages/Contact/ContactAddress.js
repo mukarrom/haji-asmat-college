@@ -91,7 +91,7 @@ function ContactAddress() {
           {/* Twitter */}
           <a
             className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-            href="#"
+            href="src/pages/Contact/ContactAddress#"
           >
             <svg
               className="w-10 h-10 fill-current"
@@ -105,7 +105,7 @@ function ContactAddress() {
           {/* LinkedIn */}
           <a
             className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-            href="#"
+            href="src/pages/Contact/ContactAddress#"
           >
             <svg
               className="w-8 h-8"
@@ -127,7 +127,7 @@ function ContactAddress() {
           {/* Facebook */}
           <a
             className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-            href="https://web.facebook.com/hazi.asmat.clg/"
+            href="src/pages/Contact/ContactAddress"
           >
             <svg
               className="w-8 h-8"
@@ -144,7 +144,7 @@ function ContactAddress() {
           {/* Instagram */}
           <a
             className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-            href="#"
+            href="src/pages/Contact/ContactAddress#"
           >
             <svg
               className="w-8 h-8"

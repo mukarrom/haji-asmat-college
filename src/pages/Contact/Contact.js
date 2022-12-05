@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ContactAddress from '../components/Contact/ContactAddress';
-import ContactForm from '../components/Contact/ContactForm';
-import Map from '../components/Contact/Map';
-import PageHeading from '../components/PageHeading';
+import ContactAddress from './ContactAddress';
+import ContactForm from './ContactForm';
+import Map from './Map';
+import PageHeading from '../../components/PageHeading';
 
 function Contact() {
   return (

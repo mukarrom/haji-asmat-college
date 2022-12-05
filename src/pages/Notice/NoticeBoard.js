@@ -25,7 +25,7 @@ function NoticeBoard() {
             {notice.map(({ _id, heading, date }) => (
               <tr>
                 <td>
-                  <a href=" ">
+                  <a href="src/pages/Notice/NoticeBoard">
                     {heading}
                     <br />
                     <span className="badge badge-ghost badge-sm">

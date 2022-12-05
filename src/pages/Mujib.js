@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogCard from '../components/Blog/BlogCard';
-import EventCard from '../components/Event/EventCard';
-import NoticeCard from '../components/Notice/NoticeCard';
+import EventCard from './Event/EventCard';
+import NoticeCard from './Notice/NoticeCard';
 import PageHeading from '../components/PageHeading';
 import mujib from '../assets/mujib.png';
+import BlogCard from './Blog/BlogCard';
 
 function Mujib() {
   return (

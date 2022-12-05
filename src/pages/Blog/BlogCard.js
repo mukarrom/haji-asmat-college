@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../Card';
+import Card from '../../components/Card';
 
-function EventCard() {
-  const cardHeading = <h1 className="h5 text-center py-2">Event</h1>;
+function BlogCard() {
+  const cardHeading = <h1 className="h5 text-center py-2">Blog</h1>;
   return (
     <div>
       <Card cardHeading={cardHeading}>
@@ -18,4 +18,4 @@ function EventCard() {
   );
 }
 
-export default EventCard;
+export default BlogCard;

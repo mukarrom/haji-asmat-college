@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogCard from '../components/Blog/BlogCard';
-import EventCard from '../components/Event/EventCard';
-import NoticeBoard from '../components/Notice/NoticeBoard';
-import MostRead from '../components/Notice/MostRead';
+import EventCard from './Event/EventCard';
+import NoticeBoard from './Notice/NoticeBoard';
+import MostRead from './Notice/MostRead';
 import PageHeading from '../components/PageHeading';
+import BlogCard from './Blog/BlogCard';
 
 function Notice() {
   return (

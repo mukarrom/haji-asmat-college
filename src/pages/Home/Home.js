@@ -1,14 +1,15 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import WelcomeImage from '../components/Home/WelcomeImage';
-import AboutCollege from '../components/Home/AboutCollege';
-import Cards from '../components/Home/Cards';
-import Carousel from '../components/Home/Carousel';
-import Facility from '../components/Home/Facility';
-import MarqueeText from '../components/Home/MarqueeText';
-import ContactAddress from '../components/Contact/ContactAddress';
-import ContactForm from '../components/Contact/ContactForm';
-import Map from '../components/Contact/Map';
+import WelcomeImage from './WelcomeImage';
+import AboutCollege from './AboutCollege';
+import Cards from './Cards';
+import Carousel from './Carousel';
+import Facility from './Facility';
+import MarqueeText from './MarqueeText';
+import ContactAddress from '../Contact/ContactAddress';
+import ContactForm from '../Contact/ContactForm';
+import Map from '../Contact/Map';
+
 // import Contact from "./Contact";
 
 function Home() {

@@ -1,25 +1,22 @@
 import React from 'react';
-import {
-  useCreateUserWithEmailAndPassword,
-  useSignInWithGoogle,
-  useUpdateProfile,
-} from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 
 function Signup() {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [signInWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-
   const navigate = useNavigate();
+  // use token
+  const token = useToken(gUser || user);
 
   let loadingButton;
   let signupError;
@@ -44,16 +41,15 @@ function Signup() {
       </p>
     );
   }
-
-  if (user) {
-    console.log(user);
+  if (token) {
+    navigate('/');
   }
 
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
     await signInWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
-    navigate('/appointment');
+    // navigate('/');
   };
 
   return (
