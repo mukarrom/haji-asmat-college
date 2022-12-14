@@ -1,21 +1,26 @@
 import React from 'react';
 import pic3 from '../../assets/college3.jpg';
 import pic4 from '../../assets/college4.jpg';
+import pic1 from '../../assets/cover.jpg'
+import pic2 from '../../assets/main-building.jpg'
+
 
 function Carousel() {
   return (
     <div className="">
-      <div className="carousel w-full h-[70vh]">
-        <div id="item2" className="carousel-item w-full">
-          <img
-            src="http://kodeforest.net/html/uoe/extra-images/slider2.jpg"
-            className="w-full"
-            alt=""
-          />
-        </div>
+      <div className="carousel w-full h-[100vh]">
         <div id="item1" className="carousel-item w-full">
           <img
-            src="https://demo.web3canvas.com/themeforest/unisco/images/slider-3.jpg"
+              src={pic2}
+              // src="https://demo.web3canvas.com/themeforest/unisco/images/slider-3.jpg"
+              className="w-full"
+              alt=""
+          />
+        </div>
+        <div id="item2" className="carousel-item w-full">
+          <img
+              src={pic1}
+            // src="http://kodeforest.net/html/uoe/extra-images/slider2.jpg"
             className="w-full"
             alt=""
           />

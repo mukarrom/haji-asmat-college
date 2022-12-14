@@ -36,7 +36,6 @@ function BlogsSetting() {
                     posterEmail: user.email,
                     postedTime: new Date().toLocaleString('in'),
                 };
-                // console.log(finalData);
                 // send to your database
                 fetch(`http://localhost:3001/api/v1/blogs/${whoActive}`, {
                     method: 'PUT',
@@ -167,12 +166,12 @@ function BlogsSetting() {
                 <div className="card-body">
                     <div className="w-full flex justify-center">
                         <input
-                            value="Blog"
+                            value="BlogDetails"
                             className={`btn ${whoActive === 'blog' ? 'btn-active btn-primary' : 'btn-active btn-ghost'} w-1/2`}
                             onClick={() => SetWhoActive('blog')}
                         />
                         <input
-                            value="Event"
+                            value="EventDetails"
                             className={`btn w-1/2 ${whoActive === 'event' ? 'btn-active btn-primary' : 'btn-active btn-ghost'}`}
                             onClick={() => SetWhoActive('event')}
                         />
@@ -195,7 +194,7 @@ function BlogsSetting() {
                                 // aria-invalid={errors.name ? 'true' : 'false'}
                             />
 
-                            {/* >----> Blog/Event Heading <----< */}
+                            {/* >----> BlogDetails/EventDetails Heading <----< */}
                             <label className="label">
                                 <span className="label-text">Write {whoActive} Heading</span>
                             </label>
@@ -218,7 +217,7 @@ function BlogsSetting() {
                                     </p>
                                 )}
                             </label>
-                            {/* >----> Blog/Event Image <----< */}
+                            {/* >----> BlogDetails/EventDetails Image <----< */}
                             <label className="label">
                                 <span className="label-text">Upload image for {whoActive}</span>
                             </label>

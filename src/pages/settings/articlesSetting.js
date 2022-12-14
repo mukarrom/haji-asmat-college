@@ -67,8 +67,8 @@ function ArticlesSetting() {
                                 <option value="empty" selected>
                                     Please select a category
                                 </option>
-                                {/* <option value="blog">Blog</option> */}
-                                {/* <option value="event">Event</option> */}
+                                {/* <option value="blog">BlogDetails</option> */}
+                                {/* <option value="event">EventDetails</option> */}
                                 <option value="history">College History</option>
                                 <option value="chairman">Voice of Chairman</option>
                                 <option value="principal">Voice of Principal</option>
@@ -78,7 +78,7 @@ function ArticlesSetting() {
                             {/* {category === 'blog' ? ( */}
                             {/*	<> */}
                             {/*		<label className="label"> */}
-                            {/*			<span className="label-text">Select Blog sub category</span> */}
+                            {/*			<span className="label-text">Select BlogDetails sub category</span> */}
                             {/*		</label> */}
                             {/*		<select */}
                             {/*			name="category" */}
@@ -87,7 +87,7 @@ function ArticlesSetting() {
                             {/*			<option disabled selected> */}
                             {/*				Please select blog sub category */}
                             {/*			</option> */}
-                            {/*			<option value="">Blog a</option> */}
+                            {/*			<option value="">BlogDetails a</option> */}
                             {/*			<option value="">blog b</option> */}
                             {/*		</select> */}
                             {/*	</> */}
@@ -97,7 +97,7 @@ function ArticlesSetting() {
                             {/*	<> */}
                             {/*		<label className="label"> */}
                             {/*			<span className="label-text"> */}
-                            {/*				Select Event sub category */}
+                            {/*				Select EventDetails sub category */}
                             {/*			</span> */}
                             {/*		</label> */}
                             {/*		<select */}
@@ -107,8 +107,8 @@ function ArticlesSetting() {
                             {/*			<option disabled selected> */}
                             {/*				Please select event sub category */}
                             {/*			</option> */}
-                            {/*			<option value="">Event a</option> */}
-                            {/*			<option value="">Event b</option> */}
+                            {/*			<option value="">EventDetails a</option> */}
+                            {/*			<option value="">EventDetails b</option> */}
                             {/*		</select> */}
                             {/*	</> */}
                             {/* ) : null} */}

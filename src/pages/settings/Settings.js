@@ -15,21 +15,27 @@ function Settings() {
                 <ul className="menu p-4 bg-base-100 text-base-content">
                     {/* <!-- Sidebar content here --> */}
                     <li className="mt-10">
-                        <Link to="/settings">Profile</Link>
+                        <Link to="/settings">Users</Link>
                     </li>
                     <li>
-                        <Link to="/settings/notice">Notice</Link>
+                        <Link to="/settings/notice/add">Add Notice</Link>
+                    </li>
+                    {/* <li> */}
+                    {/*    <Link to="/settings/notice">Notice</Link> */}
+                    {/* </li> */}
+                    <li>
+                        <Link to="/settings/gallery/add">Gallery</Link>
                     </li>
                     <li>
                         <Link to="/settings/blogs">Blogs</Link>
                     </li>
                     <li>
-                        <Link to="/settings/articles">Articles</Link>
+                        <Link to="/settings/articles">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/settings/test">test</Link>
                     </li>
 
-                    <li>
-                        <Link to="/settings/users">Users</Link>
-                    </li>
                 </ul>
             </div>
         </div>

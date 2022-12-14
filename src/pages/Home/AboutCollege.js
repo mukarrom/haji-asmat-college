@@ -1,29 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import college from '../../assets/college.jpg';
-import useArticles from '../../hooks/useArticles';
+import Loading from '../../components/Loading';
+import useGetFirstData from '../../hooks/useGetFirstData';
 
 function AboutCollege() {
-	const articles = useArticles('history');
-	const short = articles[0]?.code.slice(0, 4500);
-	const more =
-		'<a href="/history" class="font-bold text-purple-900">more...</a>';
-	// console.log(short);
-	return (
-		<div>
-			<div className="hero">
-				<div className="hero-content flex-col lg:flex-row">
-					<img
-						src={college}
-						className="w-96 max-h-96 rounded-lg shadow-2xl"
-						alt=""
-					/>
+    const [isLoading, error, data] = useGetFirstData('history');
+    if (isLoading) return <Loading />;
+    if (error) return `An error has occurred: ${error.message}`;
 
-					<div>
-						{/* <h1 className="h2 text-primary text-bold">{articles[0]?.title}</h1> */}
-						<span dangerouslySetInnerHTML={{ __html: `${short} ${more}` }} />
-					</div>
-					{/*   <p className="py-6 text-justify">
+    // if (error) return `An error has occurred: ${error.message}`;
+    const more =
+        '<a href="/history" class="font-bold text-purple-900">(more...)</a>';
+    // console.log(short);
+    return (
+        <div>
+            <div className="hero">
+                <div className="hero-content flex-col lg:flex-row">
+                    <img
+                        src={college}
+                        className="w-96 max-h-96 rounded-lg shadow-2xl"
+                        alt=""
+                    />
+
+                    <div>
+                        {/* <h1 className="h2 text-primary text-bold">{articles[0]?.title}</h1> */}
+                        <span dangerouslySetInnerHTML={{ __html: `${data?.shortDescription} ${more}` }} />
+                    </div>
+                    {/*   <p className="py-6 text-justify">
               The University of Dhaka (also known as Dhaka University, or
               abbreviated as DU) is a public research university located in
               Dhaka, Bangladesh. It is the oldest university in Bangladesh. On
@@ -46,11 +49,11 @@ function AboutCollege() {
               Shahidullah (educator, philologist and linguist)
             </p>
           </div> */}
-				</div>
-			</div>
-			<div className="divider gap-1" />
-		</div>
-	);
+                </div>
+            </div>
+            <div className="divider gap-1" />
+        </div>
+    );
 }
 
 export default AboutCollege;
