@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ee0bfbf-721f-4c78-b622-f8a7275f52d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,9 @@
       <workItem from="1670909319535" duration="878000" />
       <workItem from="1670910311827" duration="255000" />
       <workItem from="1671031257129" duration="2429000" />
-      <workItem from="1671063618265" duration="4753000" />
+      <workItem from="1671063618265" duration="5407000" />
+      <workItem from="1671090056575" duration="11000" />
+      <workItem from="1671093996153" duration="185000" />
     </task>
     <servers />
   </component>
