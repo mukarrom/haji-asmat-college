@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { toast } from 'react-toastify';
-import Loading from '../../components/Loading';
+import Loading from '../../../components/Loading';
 
 function Users() {
 	const {
@@ -21,25 +21,51 @@ function Users() {
 		return <Loading />;
 	}
 	const makeAdmin = (email) => {
+		// console.log("make admin")
 		fetch(`https://mmh.cyclic.app/api/v1/users/admin/${email}`, {
 			method: 'PUT',
 			headers: {
 				authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+				action: 'make_admin'
 			},
 		})
 			.then((res) => {
 				if (res.status === 403) {
 					toast.error('Failed to make an admin');
 				}
-				return res.json();
+				return res.json()
 			})
 			.then((data) => {
-				if (data.modifiedCount > 0) {
+				// console.log()
+				if (data.result.modifiedCount > 0) {
 					toast.success('Successfully made admin', email);
 					refetch();
 				}
 			});
 	};
+
+	const handleRemoveAdmin = (email) => {
+		fetch(`https://mmh.cyclic.app/api/v1/users/admin/${email}`, {
+			method: 'PUT',
+			headers: {
+				authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+				action: 'remove_admin'
+			},
+		})
+			.then((res) => {
+				if (res.status === 403) {
+					toast.error('Failed to remove admin');
+				}
+				return res.json()
+			})
+			.then((removeData) => {
+				// console.log(removeData)
+				if (removeData.result.modifiedCount > 0) {
+					toast.success('Successfully remove admin', email);
+					refetch();
+				}
+			});
+	}
 	return (
 		<div className="overflow-x-auto">
 			<table className="table w-full border-x-[#1d8a99] border">
@@ -72,18 +98,24 @@ function Users() {
 							<td>{user?.displayName}</td>
 							<td>{user?.email}</td>
 							<td>
-								{user?.role !== 'admin' && (
+								{user?.role !== 'admin' ?
 									<button
 										type="button"
 										className="btn btn-sm"
 										onClick={() => makeAdmin(user?.email)}
 									>
 										Make admin
-									</button>
-								)}
+									</button> : null
+								}
 							</td>
 							<td>
-								<button className="btn btn-sm btn-error">Remove Admin</button>
+								{user?.role === 'admin' ?
+								<button
+									className="btn btn-sm btn-error"
+									type="button"
+									onClick={()=>handleRemoveAdmin(user?.email)}
+								>Remove Admin</button> : null
+								}
 							</td>
 						</tr>
 					))}

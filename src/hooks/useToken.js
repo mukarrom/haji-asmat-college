@@ -9,6 +9,8 @@ const useToken = (user) => {
 		const phoneNumber = user?.user?.phoneNumber;
 		const photoURL = user?.user?.photoURL;
 
+		// console.log(displayName)
+
 		const currentUser = {
 			displayName,
 			email,

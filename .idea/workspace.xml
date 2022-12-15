@@ -5,52 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ee0bfbf-721f-4c78-b622-f8a7275f52d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hooks/usePostData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Blog/BlogDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Notice/NoticeUpdateModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Notice/Notices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/AboutMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/AboutMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/BlogMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/BlogMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/ProfileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/ProfileMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useArticles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useArticles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/CollageHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/CollageHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/MissionVision.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/MissionVision.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/VoiceOfChairman.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/VoiceOfChairman.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/VoiceOfPrincipal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/VoiceOfPrincipal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/Blog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/Blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/Blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Event/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Event/Event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Event/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Event/Events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Gallery/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice/NoticeBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notice/NoticeBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice/NoticeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notice/NoticeCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/authentication/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/RequireAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/RequireAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/BlogsSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/BlogsSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/NoticeSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/NoticeSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/Settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/articlesSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/articlesSetting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/settings/Users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,23 +29,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/MMH Drive/Programming/Khidma IT/Haji Asmat College/client",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MMH Drive/Programming/Khidma IT/Haji Asmat College/client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MMH Drive\Programming\Khidma IT\Haji Asmat College\client\src\pages\settings\Users" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,6 +61,8 @@
       <updated>1670909317475</updated>
       <workItem from="1670909319535" duration="878000" />
       <workItem from="1670910311827" duration="255000" />
+      <workItem from="1671031257129" duration="2429000" />
+      <workItem from="1671063618265" duration="4753000" />
     </task>
     <servers />
   </component>

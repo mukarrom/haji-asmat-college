@@ -21,10 +21,19 @@ function Login() {
 
     // use token
     const token = useToken(gUser || user);
+    // console.log(gUser?.user?.email)
+    const from = location.state?.from?.pathname || '/';
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [from, navigate, token]);
+    // if(token){
+    //     navigate('/');
+    // }
 
     let loadingButton;
     let loginError;
-    const from = location.state?.from?.pathname || '/';
 
     if (gLoading || loading) {
         loadingButton = (
@@ -43,11 +52,6 @@ function Login() {
         );
     }
 
-    useEffect(() => {
-        if (token) {
-            navigate(from, { replace: true });
-        }
-    }, [from, navigate, token]);
 
     const onSubmit = (data) => {
         signInWithEmailAndPassword(data.email, data.password);

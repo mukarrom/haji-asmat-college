@@ -22,7 +22,7 @@ import Signup from './pages/authentication/Signup';
 import RequireAuth from './pages/authentication/RequireAuth';
 import Settings from './pages/settings/Settings';
 import Profile from './pages/Profile/Profile';
-import Users from './pages/settings/Users';
+import Users from './pages/settings/Users/Users';
 import 'react-toastify/dist/ReactToastify.css';
 import ArticlesSetting from './pages/settings/articlesSetting';
 import BlogDetails from './pages/Blog/BlogDetails';
@@ -30,7 +30,6 @@ import BlogsSetting from './pages/settings/BlogsSetting';
 import EventDetails from './pages/Event/EventDetails';
 import NoticeDetails from './pages/Notice/NoticeDetails';
 import TestSetting from './pages/settings/Test/TestSetting';
-import './App.css';
 import UploadTest from './pages/settings/Test/UploadTest';
 import UpdateTest from './pages/settings/Test/UpdateTest';
 import TestPreview from './pages/settings/Test/TestPreview';
@@ -47,6 +46,7 @@ import UpdateBlog from './pages/settings/blogs/UpdateBlog';
 import AddBlog from './pages/settings/blogs/AddBlog';
 import AddEvent from "./pages/settings/Events/AddEvent";
 import UpdateEvent from "./pages/settings/Events/UpdateEvent";
+import './App.css';
 
 function App() {
 	// const [user] = useAuthState(auth);
