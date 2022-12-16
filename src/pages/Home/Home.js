@@ -10,6 +10,9 @@ import ContactAddress from '../Contact/ContactAddress';
 import ContactForm from '../Contact/ContactForm';
 import Map from '../Contact/Map';
 import Footer from '../../components/Footer';
+import '../../Fonts.css'
+import Slider from "./Slider";
+import MySlider from "./Slider";
 
 // import Contact from "./Contact";
 
@@ -17,15 +20,21 @@ function Home() {
     return (
         <div>
             <div className="bg-base-100 w-full flex flex-row-reverse">
-                <div className="bg-secondary p-2 text-white font-bold text-2xl">
+                <div className="bg-secondary p-2 text-white font-bold font-bn-hand text-2xl">
                     নোটিশ
                 </div>
-                <Marquee direction="left">
+                <Marquee
+                    direction="left"
+                    pauseOnHover={true}
+                    speed={10}
+                    gradient={false}
+                >
                     <MarqueeText />
                 </Marquee>
             </div>
             <div className="h-full  ">
-                <Carousel />
+                {/*<Carousel />*/}
+                <MySlider />
             </div>
             <Facility />
             <AboutCollege />
@@ -40,7 +49,6 @@ function Home() {
                     <Map />
                 </div>
             </div>
-
             {/*<WelcomeImage />*/}
             <Footer />
         </div>

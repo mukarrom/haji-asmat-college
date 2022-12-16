@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import About from './pages/About/About';
-import AdmitForm from './pages/AdmitForm';
+import AdmitForm from './pages/AdmitForm/AdmitForm';
 import Blogs from './pages/Blog/Blogs';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
@@ -46,21 +46,20 @@ import UpdateBlog from './pages/settings/blogs/UpdateBlog';
 import AddBlog from './pages/settings/blogs/AddBlog';
 import AddEvent from "./pages/settings/Events/AddEvent";
 import UpdateEvent from "./pages/settings/Events/UpdateEvent";
-import './App.css';
 
 function App() {
 	// const [user] = useAuthState(auth);
 	// console.log(user);
 	// const [admin, adminLoading] = useAdmin(user);
 	return (
-		<div>
+		<div className="font-kalpurush">
 
 			<Logo display="hidden" />
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/home" element={<Home />} />
-				<Route path="/admission" element={<AdmitForm />} />
+				<Route path="/admission" element={<RequireAuth><AdmitForm /></RequireAuth>} />
 				<Route path="/about" element={<About />} />
 				<Route path="/voiceOfChairman" element={<VoiceOfChairman />} />
 				<Route path="/voiceOfPrincipal" element={<VoiceOfPrincipal />} />

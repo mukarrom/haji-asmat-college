@@ -1,14 +1,19 @@
 import React from 'react';
 import useNoticeFetch from '../../hooks/useNoticeFetch';
+import useGetData from "../../hooks/useGetData";
+import Loading from "../../components/Loading";
+import {Link} from "react-router-dom";
 
 function MarqueeText() {
-  const [notice] = useNoticeFetch();
+  const [isLoading, error, data, refetch] = useGetData('notice');
+  if (isLoading) return <Loading />;
+  if (error) return `An error has occurred: ${error.message}`;
   return (
     <div className="flex">
-      {notice.map((heading, index) => (
-        <p key={index}>
+      {data.map((notice) => (
+        <p key={notice?._id}>
           ::
-          <a href=" " className="text-secondary mx-5">{heading.heading}</a>
+          <Link to={`/notice/${notice?._id}`} className="text-secondary mx-5 font-bn-hand">{notice?.title}</Link>
         </p>
       ))}
     </div>

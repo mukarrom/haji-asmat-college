@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'handBanlgla'; /*a name to be used later*/
+  src: url('../public/hand_right_bn.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'kalpurush';
+  src: url("../public/kalpurush.ttf");
+}
+
+.font-bn-hand {
+  font-family: handBanlgla;
+}
+
+.font-kalpurush {
+  font-family: kalpurush;
+}

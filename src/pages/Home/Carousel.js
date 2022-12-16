@@ -6,6 +6,7 @@ import pic2 from '../../assets/main-building.jpg'
 
 
 function Carousel() {
+
   return (
     <div className="">
       <div className="carousel w-full h-[100vh]">
