@@ -30,11 +30,6 @@ function NavItems() {
             <li className="hover:bg-[#c82848] rounded-xl">
                 <NavLink to="/mujib">Mujib Corner</NavLink>
             </li>
-            {!user && (
-                <li className="hover:bg-[#c82848] rounded-xl">
-                    <NavLink to="login">Login</NavLink>
-                </li>
-            )}
         </>
     );
 }

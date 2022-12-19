@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import logo from '../../assets/asmat-logo.jpeg';
 // import auth from '../../firebase.init';
@@ -10,6 +10,7 @@ import SearchModal from './SearchModal';
 import ProfileMenu from './ProfileMenu';
 import auth from '../../firebase.init';
 import Loading from '../Loading';
+import {FiLogIn} from "react-icons/fi";
 
 function Navbar() {
     const [user, loading] = useAuthState(auth);
@@ -17,7 +18,7 @@ function Navbar() {
 
     return (
         // ---------------------- New Navbar -------------------------------------
-        <div className="navbar bg-primary text-white z-50 sticky top-0">
+        <div className="navbar bg-light-blue text-white z-50 sticky top-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -49,7 +50,8 @@ function Navbar() {
                     to="/"
                     className="hidden lg:block absolute top-0 left-[50%] lg:left-0 h-[120px]"
                 >
-                    <img className="w-32 rounded-b-full shadow-md" src={logo} alt="" />
+                    <div className="flex items-center h-16 p-5"><span className="text-4xl font-bold">HACB</span></div>
+                    {/*<img className="w-32 rounded-b-full shadow-md" src={logo} alt="" />*/}
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -66,10 +68,14 @@ function Navbar() {
                 {/* {searchIcon} */}
                 <SearchModal />
                 {/* notification */}
-                {notification}
+                {/*{notification}*/}
                 {/** ************* profile ************** */}
                 {
-                    user ? <ProfileMenu /> : null
+                    user ? <ProfileMenu />
+                      :
+                      <NavLink to="/login" className="btn btn-ghost btn-circle">
+                          <FiLogIn className="font-bold text-2xl" />
+                      </NavLink>
                 }
 
             </div>

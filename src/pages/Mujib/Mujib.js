@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import EventCard from './Event/EventCard';
-import NoticeCard from './Notice/NoticeCard';
-import PageHeading from '../components/PageHeading';
-import mujib from '../assets/mujib.png';
-import BlogCard from './Blog/BlogCard';
+import {Link} from 'react-router-dom';
+import EventCard from '../Event/EventCard';
+import NoticeCard from '../Notice/NoticeCard';
+import PageHeading from '../../components/PageHeading';
+import mujib from '../../assets/mujib.png';
+import BlogCard from '../Blog/BlogCard';
 
 function Mujib() {
   return (
@@ -26,7 +26,7 @@ function Mujib() {
       {/* Main */}
       <section className="flex w-full">
         <main className="lg:w-3/4 px-6 mt-8">
-          <img src={mujib} alt="Mujib Corner" className="w-full" />
+          <img src={mujib} alt="Mujib Corner" className="w-full"/>
           <div className="">
             <p className="p text-lg text-justify">
               শেখ মুজিবুর রহমান (১৭ই মার্চ ১৯২০ – ১৫ই আগস্ট ১৯৭৫),
@@ -91,9 +91,9 @@ function Mujib() {
         </main>
         <aside className="w-1/4 hidden lg:block">
           <div className="">
-            <NoticeCard />
-            <EventCard />
-            <BlogCard />
+            <NoticeCard/>
+            <EventCard/>
+            <BlogCard/>
           </div>
         </aside>
       </section>

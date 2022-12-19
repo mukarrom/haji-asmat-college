@@ -85,7 +85,7 @@
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--bs-heading-color);
+    /*color: var(--bs-heading-color);*/
   }
 
   .h1 {
@@ -140,6 +140,12 @@
     margin-bottom: 1rem;
   }
   /* More */
+  .bg-light-blue {
+    @apply bg-[#5596CF]
+  }
+  .bg-light-red {
+    @apply bg-[#DD3737]
+  }
   .bgGradientprimary {
     @apply bg-gradient-to-tr from-secondary to-d-secondary
   }
