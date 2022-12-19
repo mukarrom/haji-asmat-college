@@ -32,7 +32,7 @@ function AddGovBody() {
         const finalData = {
           name: e.name,
           email: e.email,
-          position: 0,
+          // position: 0,
           // description: e.description,
           // actionTime: startDate,
           image: imgUrl,
@@ -203,19 +203,19 @@ function AddGovBody() {
             </label>
           </div>
           {/* >-------------->1. email ends <--------------< */}
-          {/* >-------------->2. position starts  <--------------< */}
-          <div className="form-control w-full max-w-xs">
-            <label className="label">
-              <span className="label-text">position</span>
-            </label>
-            <input
-              {...register('position')}
-              type="number"
-              placeholder="Number of position"
-              className="input input-bordered w-full max-w-xs"
-            />
-          </div>
-          {/* >-------------->2. position end <--------------< */}
+          {/*/!* >-------------->2. position starts  <--------------< *!/*/}
+          {/*<div className="form-control w-full max-w-xs">*/}
+          {/*  <label className="label">*/}
+          {/*    <span className="label-text">position</span>*/}
+          {/*  </label>*/}
+          {/*  <input*/}
+          {/*    {...register('position')}*/}
+          {/*    type="number"*/}
+          {/*    placeholder="Number of position"*/}
+          {/*    className="input input-bordered w-full max-w-xs"*/}
+          {/*  />*/}
+          {/*</div>*/}
+          {/*/!* >-------------->2. position end <--------------< *!/*/}
 
           {/* >-------------->4. Image upload <--------------< */}
           <div className="form-control w-full max-w-xs">

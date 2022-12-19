@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ee0bfbf-721f-4c78-b622-f8a7275f52d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/GovBody.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/VoiceOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/AboutMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/AboutMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Gallery/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Gallery/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/ResponsiveCarousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Mujib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Mujib/Mujib.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Registration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/BlogsSetting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/NoticeSetting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/Settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/articlesSetting.js" beforeDir="false" />
-    </list>
+    <list default="true" id="0ee0bfbf-721f-4c78-b622-f8a7275f52d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +77,7 @@
       <workItem from="1671342403629" duration="350000" />
       <workItem from="1671343454589" duration="2560000" />
       <workItem from="1671351098229" duration="5487000" />
-      <workItem from="1671437845878" duration="3364000" />
+      <workItem from="1671437845878" duration="4131000" />
     </task>
     <servers />
   </component>
