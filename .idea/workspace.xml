@@ -6,41 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ee0bfbf-721f-4c78-b622-f8a7275f52d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/CollageHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/CollageHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/GoverningBodies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/GoverningBodies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/MissionVision.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/MissionVision.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/VoiceOfChairman.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/VoiceOfChairman.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About/VoiceOfPrincipal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/VoiceOfPrincipal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AdmitForm/AdmitForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AdmitForm/AdmitForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/BlogCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/BlogCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/BlogDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/BlogDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/Blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/Blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact/ContactAddress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact/ContactAddress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Event/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Event/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Event/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Event/Events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Gallery/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Gallery/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/AboutCollege.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/GoverningBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/GoverningBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/MarqueeText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice/NoticeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notice/NoticeCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice/NoticeDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notice/NoticeDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Notice/Notices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Notice/Notices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Gallery/UpdateImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/settings/Gallery/UpdateImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Test/DeleteTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Test/TestPreview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Test/TestSetting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Test/UpdateTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/settings/Test/UploadTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +84,9 @@
       <workItem from="1671528378785" duration="7610000" />
       <workItem from="1671548506864" duration="384000" />
       <workItem from="1671548918569" duration="1355000" />
-      <workItem from="1671589895707" duration="1660000" />
+      <workItem from="1671589895707" duration="4732000" />
+      <workItem from="1671594888899" duration="675000" />
+      <workItem from="1671598425094" duration="4681000" />
     </task>
     <servers />
   </component>

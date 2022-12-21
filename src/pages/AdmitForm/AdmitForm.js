@@ -35,67 +35,111 @@ function AdmitForm() {
       >
         <h2 className="text-3xl font-semibold text-gray-800">Admissions Form</h2>
         <p>Enter your admission information below</p>
+        {/*************************************************************/}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {/************ class name **************/}
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="">শ্রেণির নাম <strong className="text-red-500">*</strong></span>
+            </label>
+            <select className="select select-bordered bg-base-100 dark:text-white">
+              <option>একাদশ</option>
+              <option>দ্বাদশ</option>
+              <option>ডিগ্রি ১ম বর্ষ</option>
+              <option>ডিগ্রি ২য় বর্ষ</option>
+              <option>ডিগ্রি ৩য় বর্ষ</option>
+              <option>অনার্স ১ম বর্ষ</option>
+              <option>অনার্স ২য় বর্ষ</option>
+              <option>অনার্স ৩য় বর্ষ</option>
+              <option>অনার্স ৪র্থ বর্ষ</option>
+              <option>মাস্টার্স ১ম বর্ষ</option>
+            </select>
+          </div>
+          {/************ শাখা/বিভাগের নাম **************/}
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="">শাখা/বিভাগের নাম <strong className="text-red-500">*</strong></span>
+            </label>
+            <select className="select select-bordered bg-base-100 dark:text-white">
+              <option>বিজ্ঞান</option>
+              <option>মানবিক</option>
+              <option>ব্যবসায়িক শিক্ষা</option>
+              <option>কম্পিউটার</option>
+              <option>কারিগরী</option>
+            </select>
+          </div>
+          {/************ class name **************/}
+          {/*
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="">শিক্ষবর্ষ (সেশন) <strong className="text-red-500">*</strong></span>
+          </label>
+          <select className="select select-bordered bg-base-100 dark:text-white">
+            <option>একাদশ</option>
+            <option>দ্বাদশ</option>
+            <option>ডিগ্রি ১ম বর্ষ</option>
+            <option>ডিগ্রি ২য় বর্ষ</option>
+            <option>ডিগ্রি ৩য় বর্ষ</option>
+            <option>অনার্স ১ম বর্ষ</option>
+            <option>অনার্স ২য় বর্ষ</option>
+            <option>অনার্স ৩য় বর্ষ</option>
+            <option>অনার্স ৪র্থ বর্ষ</option>
+            <option>মাস্টার্স ১ম বর্ষ</option>
+          </select>
+        </div>
+        */}
+        </div>
+        {/**************************************************************/}
         {/*======================================= Name =======================================*/}
         <div className="my-4">
-          <h4>Name <stron className="text-red-800 font-bold">*</stron></h4>
-          <div className="flex flex-wrap gap-3">
-            {/*----------- first name -------------*/}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {/*----------- name bn -------------*/}
             <div className="form-control w-full max-w-xs">
+              <h4>Full name (Bangla) <stron className="text-red-800 font-bold">*</stron></h4>
               <input
                 type="text"
-                placeholder="First name"
+                placeholder="পূর্ণ নাম (বাংলা)"
                 className="input input-bordered w-full max-w-xs"
-                {...register('fName', {
+                {...register('nameBn', {
                   required: {
                     value: true,
-                    message: 'First Name is Required',
+                    message: 'সম্পূর্ণ নাম বাংলায় অবশ্যয় দিতে হবে',
                   },
                 })}
-                // aria-invalid={errors.name ? 'true' : 'false'}
               />
               <label className="label">
-                <span className="label-text-alt text-gray-600">First Name</span>
-              </label>
-              <label className="label">
-                {errors.fName?.type === 'required' && (
+                {errors.nameBn?.type === 'required' && (
                   <p className="label-text-alt text-red-500" role="alert">
-                    {errors.fName.message}
+                    {errors.nameBn.message}
                   </p>
                 )}
               </label>
             </div>
-            {/*----------- Middle name -------------*/}
+            {/*----------- Full name English -------------*/}
             <div className="form-control w-full max-w-xs">
+              <h4>Full name (English) <stron className="text-red-800 font-bold">*</stron></h4>
               <input
                 type="text"
-                placeholder="Middle Initial"
+                placeholder="পূর্ণ নাম (ইংরেজি)"
                 className="input input-bordered w-full max-w-xs"
-                {...register('mName')}
+                {...register('nameEn', {
+                  required: {
+                    value: true,
+                    message: 'সম্পূর্ণ নাম ইংরেজিতে অবশ্যয় দিতে হবে',
+                  },
+                })}
               />
               <label className="label">
-                <span className="label-text-alt text-gray-600">Middle Initial</span>
+                {errors.nameEn?.type === 'required' && (
+                  <p className="label-text-alt text-red-500" role="alert">
+                    {errors.nameEn.message}
+                  </p>
+                )}
               </label>
             </div>
-            {/*----------- Last name -------------*/}
+            {/*----------- Birth of date -------------*/}
             <div className="form-control w-full max-w-xs">
-              <input
-                type="text"
-                placeholder="Last name"
-                className="input input-bordered w-full max-w-xs"
-                {...register('lName',)}
-                // aria-invalid={errors.name ? 'true' : 'false'}
-              />
-              <label className="label">
-                <span className="label-text-alt text-gray-600">First Name</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        {/*======================================= Birth Date =======================================*/}
-        <div className="my-4 max-w-xs">
-          <h4>Birth Date <stron className="text-red-800 font-bold">*</stron></h4>
-          <div className="flex flex-wrap gap-3">
-            <div className="form-control w-full max-w-xs">
+              <h4>Birth Date <stron className="text-red-800 font-bold">*</stron></h4>
               <DatePicker
                 required
                 selected={startDate}
@@ -120,177 +164,303 @@ function AdmitForm() {
               <span className="label-text">Female</span>
             </label>
           </div>
-          <div className="form-control">
-            <label className="label cursor-pointer">
-              <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked/>
-              <span className="label-text">Other</span>
-            </label>
-          </div>
         </div>
-        {/*--------------------------------------------------------*/}
-        <div className="flex flex-wrap gap-3">
-          {/*----------- father's information -------------*/}
+        {/*------------------------ father's information --------------------------------*/}
+        <h1 className="text-center text-bold text-2xl text-primary font-bn-hand mt-6 mb-2">
+          <span className="py-2 px-8 shadow-xl">পিতা</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+          {/*----------- Father's name -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>পিতার নাম
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
             <input
               type="text"
-              placeholder="Father's name"
+              placeholder="পিতার নাম"
               className="input input-bordered w-full max-w-xs"
-              {...register('father_name', {
+              {...register('fatherName', {
                 required: {
                   value: true,
-                  message: 'fathers name is Required',
+                  message: 'Father\'s name is required',
                 },
               })}
-              // aria-invalid={errors.name ? 'true' : 'false'}
             />
             <label className="label">
-              <span className="label-text-alt text-gray-600">Father's name</span>
-            </label>
-            <label className="label">
-              {errors.father_name?.type === 'required' && (
+              {errors.fatherName?.type === 'required' && (
                 <p className="label-text-alt text-red-500" role="alert">
-                  {errors.father_name.message}
+                  {errors.fatherName.message}
                 </p>
               )}
             </label>
           </div>
-          {/*----------- Father occupation -------------*/}
+          {/*----------- Father's Occupation -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>পেশা
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
             <input
               type="text"
-              placeholder="+880 1505 037017"
+              placeholder="পেশা"
               className="input input-bordered w-full max-w-xs"
-              {...register('father_occupation')}
-              // aria-invalid={errors.name ? 'true' : 'false'}
+              {...register('fOccupation')}
             />
-            <label className="label">
-              <span className="label-text-alt text-gray-600">father occupation</span>
-            </label>
           </div>
-          {/*----------- father Phone number -------------*/}
+          {/*----------- ফোন নাম্বার -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>মোবাইল
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
             <input
               type="tel"
-              placeholder="+880 1505 037017"
+              placeholder="মোবাইল"
               className="input input-bordered w-full max-w-xs"
-              {...register('father_phone')}
-              // aria-invalid={errors.name ? 'true' : 'false'}
+              {...register('fMobile')}
             />
-            <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
-            </label>
+          </div>
+          {/*----------- NID নাম্বার -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>এনআইডি নাম্বার
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
+            <input
+              type="number"
+              placeholder="এনআইডি নাম্বার"
+              className="input input-bordered w-full max-w-xs"
+              {...register('fNID')}
+            />
           </div>
         </div>
-        {/*------------ mother's information --------------*/}
-        <div className="flex flex-wrap gap-3">
-          {/*----------- Phone number -------------*/}
+
+        {/*------------------------ mother's information --------------------------------*/}
+        <h1 className="text-center text-bold text-2xl text-primary font-bn-hand mt-6 mb-2">
+          <span className="py-2 px-8 shadow-xl">মাতা</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+          {/*----------- Mother's name -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>মাতার নাম
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
             <input
               type="text"
-              placeholder="+880 1505 037017"
+              placeholder="মাতার নাম"
               className="input input-bordered w-full max-w-xs"
-              {...register('mother_name')}
+              {...register('motherName', {
+                required: {
+                  value: true,
+                  message: 'Mother\'s name is required',
+                },
+              })}
             />
             <label className="label">
-              <span className="label-text-alt text-gray-600">Mother's Name</span>
+              {errors.motherName?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.motherName.message}
+                </p>
+              )}
             </label>
           </div>
           {/*----------- Mother's Occupation -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>পেশা
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="পেশা"
+              className="input input-bordered w-full max-w-xs"
+              {...register('mOccupation')}
+            />
+          </div>
+          {/*----------- ফোন নাম্বার -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>মোবাইল
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
             <input
               type="tel"
-              placeholder="+880 1505 037017"
+              placeholder="মোবাইল"
               className="input input-bordered w-full max-w-xs"
-              {...register('mother_occupation')}
+              {...register('mMobile')}
+            />
+          </div>
+          {/*----------- NID নাম্বার -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>এনআইডি নাম্বার
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
+            <input
+              type="number"
+              placeholder="এনআইডি নাম্বার"
+              className="input input-bordered w-full max-w-xs"
+              {...register('mNID')}
+            />
+          </div>
+        </div>
+
+        {/*################################# অভিভাবক #####################################*/}
+        <h1 className="text-center text-bold text-2xl text-primary font-bn-hand mt-6 mb-2">
+          <span className="py-2 px-8 shadow-xl">অভিভাবক</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+          {/*----------- অভিভাবকের নাম -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>অভিভাবকের নাম
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="অভিভাবকের নাম"
+              className="input input-bordered w-full max-w-xs"
+              {...register('gName', {
+                required: {
+                  value: true,
+                  message: 'অভিভাবকের নাম দিন',
+                },
+              })}
             />
             <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
+              {errors.gName?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.gName.message}
+                </p>
+              )}
             </label>
           </div>
-          {/*----------- Mother's Phone number -------------*/}
+          {/*----------- Mother's Occupation -------------*/}
           <div className="form-control w-full max-w-xs">
+            <h4>সম্পর্ক
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="সম্পর্ক"
+              className="input input-bordered w-full max-w-xs"
+              {...register('relation')}
+            />
+          </div>
+          {/*----------- ফোন নাম্বার -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>মোবাইল
+              <stron className="text-red-800 font-bold"></stron>
+            </h4>
             <input
               type="tel"
-              placeholder="+880 1505 037017"
+              placeholder="মোবাইল"
               className="input input-bordered w-full max-w-xs"
-              {...register('mother_phone')}
+              {...register('gMobile')}
+            />
+          </div>
+        </div>
+
+        {/*  ############################### Address ####################################*/}
+        <h1 className="text-center text-bold text-2xl text-primary font-bn-hand mt-6 mb-2">
+          <span className="py-2 px-8 shadow-xl">ঠিকানা</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+          {/*----------- জেলা -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>জেলা
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="জেলা"
+              className="input input-bordered w-full max-w-xs"
+              {...register('district', {
+                required: {
+                  value: true,
+                  message: 'জেলার নাম দিন',
+                },
+              })}
             />
             <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
+              {errors.district?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.district.message}
+                </p>
+              )}
+            </label>
+          </div>
+          {/*----------- উপজেলা -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>উপজেলা
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="উপজেলা"
+              className="input input-bordered w-full max-w-xs"
+              {...register('thana', {
+                required: {
+                  value: true,
+                  message: 'উপজেলার নাম দিন',
+                },
+              })}
+            />
+            <label className="label">
+              {errors.thana?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.thana.message}
+                </p>
+              )}
+            </label>
+          </div>
+          {/*----------- ডাকঘর -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>ডাকঘর
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="ডাকঘর"
+              className="input input-bordered w-full max-w-xs"
+              {...register('post', {
+                required: {
+                  value: true,
+                  message: 'ডাকঘরের নাম দিন',
+                },
+              })}
+            />
+            <label className="label">
+              {errors.post?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.post.message}
+                </p>
+              )}
+            </label>
+          </div>
+          {/*----------- গ্রাম -------------*/}
+          <div className="form-control w-full max-w-xs">
+            <h4>গ্রাম
+              <stron className="text-red-800 font-bold"> *</stron>
+            </h4>
+            <input
+              type="text"
+              placeholder="গ্রাম"
+              className="input input-bordered w-full max-w-xs"
+              {...register('village', {
+                required: {
+                  value: true,
+                  message: 'গ্রামের নাম দিন',
+                },
+              })}
+            />
+            <label className="label">
+              {errors.village?.type === 'required' && (
+                <p className="label-text-alt text-red-500" role="alert">
+                  {errors.village.message}
+                </p>
+              )}
             </label>
           </div>
         </div>
-        {/*------------- address ----------------*/}
-        <div className="flex gap-3">
-          {/*----------- Village name -------------*/}
-          <div className="form-control w-full max-w-xs">
-            <input
-              type="text"
-              placeholder="+880 1505 037017"
-              className="input input-bordered w-full max-w-xs"
-              {...register('village')}
-            />
-            <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
-            </label>
-            <label className="label">
-              {errors.phone?.type === 'required' && (
-                <p className="label-text-alt text-red-500" role="alert">
-                  {errors.phone.message}
-                </p>
-              )}
-            </label>
-          </div>
-          {/*----------- Phone number -------------*/}
-          <div className="form-control w-full max-w-xs">
-            <input
-              type="tel"
-              placeholder="+880 1505 037017"
-              className="input input-bordered w-full max-w-xs"
-              {...register('phone', {
-                required: {
-                  value: true,
-                  message: 'Phone number is Required',
-                },
-              })}
-              // aria-invalid={errors.name ? 'true' : 'false'}
-            />
-            <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
-            </label>
-            <label className="label">
-              {errors.phone?.type === 'required' && (
-                <p className="label-text-alt text-red-500" role="alert">
-                  {errors.phone.message}
-                </p>
-              )}
-            </label>
-          </div>
-          {/*----------- Phone number -------------*/}
-          <div className="form-control w-full max-w-xs">
-            <input
-              type="tel"
-              placeholder="+880 1505 037017"
-              className="input input-bordered w-full max-w-xs"
-              {...register('phone', {
-                required: {
-                  value: true,
-                  message: 'Phone number is Required',
-                },
-              })}
-              // aria-invalid={errors.name ? 'true' : 'false'}
-            />
-            <label className="label">
-              <span className="label-text-alt text-gray-600">Phone number</span>
-            </label>
-            <label className="label">
-              {errors.phone?.type === 'required' && (
-                <p className="label-text-alt text-red-500" role="alert">
-                  {errors.phone.message}
-                </p>
-              )}
-            </label>
-          </div>
+
+        {/*  ############################# submit button #################################*/}
+        <div className="grid grid-cols-2 gap-2 my-10">
+          <input className="btn btn-success btn-outline" type="submit" value="জমা করুন"/>
+          <input className="btn btn-error btn-outline" type="reset" value="রিসেট করুন"/>
         </div>
       </form>
       {/* Admission Form */}
