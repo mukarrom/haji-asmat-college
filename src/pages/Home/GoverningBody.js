@@ -38,7 +38,7 @@ const GovBodyData = () => {
       className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
       {
         bodies?.map(body => (
-          <div className="card bg-base-100 shadow-xl">
+          <div className="card bg-base-100 dark:text-white shadow-xl">
             <figure><img src={body?.image} alt="Shoes"/></figure>
             <div className="card-body flex-grow-0">
               <h2 className="text-2xl font-bold text-center">

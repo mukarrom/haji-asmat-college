@@ -8,6 +8,7 @@ import Loading from "../../components/Loading";
 import {MdAddCircle} from "react-icons/md";
 import ConfirmModal from "../../components/Modal/ConfirmModal";
 import {useQuery} from "@tanstack/react-query";
+import Footer from "../../components/Footer";
 
 const GoverningBodies = () => {
   const [modal, setModal] = useState('close');
@@ -33,7 +34,7 @@ const GoverningBodies = () => {
     if (adminLoading) return <Loading/>;
   }
   return (
-    <div>
+    <div className="bg-base-100 dark:text-white">
       <PageHeading>
         <div className="h1">Governing Body</div>
         <div className="text-sm breadcrumbs">
@@ -106,6 +107,7 @@ const GoverningBodies = () => {
             /> : null
         }
       </main>
+      <Footer/>
     </div>
   );
 };

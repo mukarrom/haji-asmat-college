@@ -27,10 +27,6 @@ import BlogDetails from './pages/Blog/BlogDetails';
 // import BlogsSetting from './pages/settings/BlogsSetting';
 import EventDetails from './pages/Event/EventDetails';
 import NoticeDetails from './pages/Notice/NoticeDetails';
-import TestSetting from './pages/settings/Test/TestSetting';
-import UploadTest from './pages/settings/Test/UploadTest';
-import UpdateTest from './pages/settings/Test/UpdateTest';
-import TestPreview from './pages/settings/Test/TestPreview';
 import RequireAdmin from './pages/authentication/RequireAdmin';
 import AddNotice from './pages/settings/Notice/AddNotice';
 import UpdateNotice from './pages/settings/Notice/UpdateNotice';
@@ -130,12 +126,6 @@ function App() {
           {/* <Route path="/settings/notice"  element={<NoticeSetting />} /> */}
           {/*<Route path="/settings/blogs" element={<BlogsSetting/>}/>*/}
           {/*<Route path="/settings/articles" element={<ArticlesSetting/>}/>*/}
-          <Route path="/settings/test" element={<TestSetting/>}>
-            <Route index element={<UploadTest/>}/>
-            <Route path="/settings/test/update/:id" element={<UpdateTest/>}/>
-            {/* <Route path="/settings/test/delete" element={<DeleteTest />}/> */}
-            <Route path="/settings/test/preview" element={<TestPreview/>}/>
-          </Route>
         </Route>
       </Routes>
       {/*  <Footer />  */}

@@ -16,7 +16,7 @@ import {Link} from "react-router-dom";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-base-100">
       <div className="bg-base-100 w-full flex flex-row-reverse">
         <div className="bg-secondary p-2 text-white font-bold font-bn-hand text-2xl">
           নোটিশ

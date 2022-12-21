@@ -8,7 +8,7 @@ import BlogCard from '../Blog/BlogCard';
 
 function Mujib() {
   return (
-    <div>
+    <div className="bg-base-100 dark:text-white">
       {/* Page Heading */}
       <PageHeading>
         <div className="h1">বঙ্গবন্ধু কর্ণার</div>

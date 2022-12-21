@@ -1,12 +1,12 @@
 import React from 'react';
-import useNoticeFetch from '../../hooks/useNoticeFetch';
+// import useNoticeFetch from '../../hooks/useNoticeFetch';
 import useGetData from "../../hooks/useGetData";
 import Loading from "../../components/Loading";
 import {Link} from "react-router-dom";
 
 function MarqueeText() {
-  const [isLoading, error, data, refetch] = useGetData('notice');
-  if (isLoading) return <Loading />;
+  const [isLoading, error, data] = useGetData('notice');
+  if (isLoading) return <Loading/>;
   if (error) return `An error has occurred: ${error.message}`;
   return (
     <div className="flex">
