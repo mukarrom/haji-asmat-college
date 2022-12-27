@@ -43,6 +43,7 @@ import UpdateEvent from "./pages/settings/Events/UpdateEvent";
 import GoverningBodies from "./pages/About/GoverningBodies";
 import AddGovBody from "./pages/settings/GoverningBody/AddGovBody";
 import UpdateGovBody from "./pages/settings/GoverningBody/UpdateGovBody";
+import UpdateProfile from "./pages/Profile/UpdateProfile";
 
 function App() {
   // const [user] = useAuthState(auth);
@@ -74,6 +75,7 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/profile/update" element={<UpdateProfile/>}/>
         <Route
           path="/settings"
           element={
