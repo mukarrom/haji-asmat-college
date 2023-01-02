@@ -43,13 +43,13 @@ function Navbar() {
 					</ul>
 				</div>
 				{/* ==============> Logo <============== */}
-				<Link
+				{/* <Link
 					to="/"
 					className="hidden lg:block absolute top-0 left-[50%] lg:left-0 h-[120px]"
 				>
-					{/* <div className="flex items-center h-16 p-5"><span className="text-4xl font-bold">HACB</span></div> */}
+					 <div className="flex items-center h-16 p-5"><span className="text-4xl font-bold">HACB</span></div>
 					<img className="w-32 rounded-b-full shadow-md" src={logo} alt="" />
-				</Link>
+				</Link> */}
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal p-0">
