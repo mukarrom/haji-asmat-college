@@ -10,11 +10,11 @@ const Gallery = () => {
 	if (isLoading) return <Loading />;
 	// if (adminLoading) return <Loading />;
 	if (error) return `An error has occurred: ${error.message}`;
-	console.log(data);
+	// console.log(data);
 	return (
-		<div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+		<div className="flex flex-wrap gap-3">
 			{data?.map((img) => (
-				<img src={img?.image} alt="" className="w-96 h-96" />
+				<img src={img?.image} alt="" className="w-72 h-72" />
 			))}
 		</div>
 	);

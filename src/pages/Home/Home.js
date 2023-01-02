@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import AboutCollege from './AboutCollege';
-import Cards from './Cards';
+// import Cards from './Cards';
 import MarqueeText from './MarqueeText';
 // import ContactAddress from '../Contact/ContactAddress';
 // import ContactForm from '../Contact/ContactForm';
@@ -33,7 +33,7 @@ function Home() {
 					<MarqueeText />
 				</Marquee>
 			</div>
-			<div className="flex justify-between items-start h-full">
+			<div className="flex flex-col md:flex-row justify-between items-start h-full">
 				{/*<Carousel />*/}
 				<MySlider />
 				<Principal />

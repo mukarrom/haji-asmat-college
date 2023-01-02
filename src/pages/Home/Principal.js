@@ -5,6 +5,7 @@ const Principal = () => {
 	return (
 		<Link to="/voiceOfPrincipal">
 			<div className="card w-96 bg-base-100 shadow-xl">
+				<div>Voice of Principal</div>
 				<figure className="px-10 pt-10">
 					<img src="principal_sir.jpeg" alt="" />
 				</figure>
